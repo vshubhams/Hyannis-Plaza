@@ -1,0 +1,139 @@
+.container{
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 10%);
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* margin: 10px; */
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.heading>h1{
+    color: #3e3d3d;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+.main{
+    display:grid;
+    grid-template-columns: 24% 48% 24%;
+    grid-gap: 15px;
+}
+.main svg{
+    fill: #5D5D5D;
+    margin-right: 10px;
+}
+.imgBox>img{
+    width: 100%;
+}
+.content>h2{
+    color: #957027;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content>h3{
+    color: #02893C;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content h4{
+    color: #C50303;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content{
+    font-size: 13px;
+}
+
+.smoke{
+    display: flex;
+    align-items: center;
+}
+.smoke>svg{
+    fill: red;
+    width: 18px;
+    margin-right: 5px;
+}
+.features{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.features>div{
+    display: flex;
+}
+.features p{
+    font-size: 14px;
+}
+.infoButton{
+    margin-top: 20px;
+    width: fit-content;
+}
+.infoButton:hover{
+border: solid #FF7D00 2px ;
+color: #0081AB;
+}
+.infoButton>span{
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.freebies{
+    display: flex;
+    margin: 10px 0;
+}
+.freebies>div{
+    display: flex;
+    margin-right: 30px;
+    padding: 0 10px;
+}
+.freebies>div>svg{
+    fill: green;
+}
+.price{
+    font-style: italic;
+    text-align: center;
+    border-left: dotted 1.5px #DEDEDE;
+    background-image: linear-gradient(#F4F4F4, #FFF);
+}
+.price>h1{
+    color: #0081AB;
+    margin-bottom: 30px;
+}
+.price>h3{
+    color: #767676;
+    text-decoration: line-through;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.price>P{
+    color: #0081AB;
+    font-size: 14px;
+}
+.price>button{
+    color: #FFF;
+    outline: none;
+    border: none;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #541202;
+}
+
+.tag{
+    display: flex;
+    background-color: #FFE8E8;
+    width: fit-content;
+    padding: 6px 5px;
+    border-radius: 7px;
+    color: #b92424;
+}
+.tag>svg{
+    margin-right: 10px;
+}

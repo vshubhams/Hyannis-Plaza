@@ -1,0 +1,32 @@
+import { RoomItem } from "./Components/RoomItem/RoomItem"
+import { Header } from "./Components/Header/Header"
+import styles from "./roomPage.module.css"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect } from "react"
+import { getRooms } from "../Redux/rooms/actions"
+export const RoomsPage = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const getRoomsAction = getRooms();
+        dispatch(getRoomsAction)
+    }, [dispatch]);
+
+    const rooms = useSelector((state) => state.app.rooms);
+    console.log('rooms:', rooms)
+
+    return (
+        <div className={styles.container}>
+            <Header />
+            <div className={styles.main}>
+                <div className={styles.left}>left side</div>
+                <div className={styles.right}>
+                    <div>ROOM & RATES</div>
+                    {rooms.map((el) => (
+                        <RoomItem key={el.id} items={el} />
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}

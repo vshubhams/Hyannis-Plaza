@@ -1,9 +1,9 @@
 import './App.css';
-
+import { RoomsPage } from './RoomsPage/RoomsPage';
 function App() {
   return (
     <div className="App">
-      <h1>Hyannis Plaza</h1>
+      <RoomsPage></RoomsPage>
     </div>
   );
 }
