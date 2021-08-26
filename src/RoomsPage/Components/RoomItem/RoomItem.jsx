@@ -7,16 +7,19 @@ import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import WcIcon from '@material-ui/icons/Wc';
 import GroupsIcon from '@material-ui/icons/Groups';
 import CircleNotificationsIcon from '@material-ui/icons/CircleNotifications';
-export const RoomItem = () => {
+
+export const RoomItem = ({ items }) => {
+    // console.log(items)
+    const { title,image,shortDesc,price,strikePrice,bed,baseOcc,maxOcc,maxAdult} = items;
     return (
         <div className={styles.container}>
             <div className={styles.heading}>
-                <h1>Two double beds</h1>
+                <h1>{title}</h1>
                 <div>$10.00 OFF</div>
             </div>
             <div className={styles.main}>
                 <div className={styles.imgBox}>
-                    <img src="https://reservation.asiwebres.com/UploadImages/HotelImages/98232/33638/dsc05806_optimized_20210809-04455033.jpg" alt="" />
+                    <img src={image} alt="" />
                 </div>
                 <div className={styles.content}>
                     <h2>Best available rate</h2>
@@ -28,29 +31,29 @@ export const RoomItem = () => {
                     <div className={styles.features}>
                         <div>
                             <PersonIcon />
-                            <p>Base Occupancy: 2</p>
+                            <p>Base Occupancy: {baseOcc}</p>
                         </div>
                         <div>
                             <GroupsIcon />
-                            <p>Max Occupancy: 2</p>
+                            <p>Max Occupancy: {maxOcc}</p>
                         </div>
                         <div>
                             <WcIcon />
-                            <p>Max Adult: 2</p>
+                            <p>Max Adult: {maxAdult}</p>
                         </div>
                         <div>
                             <HotelIcon />
-                            <p>Bad Count: 2</p>
+                            <p>Bad Count: {bed}</p>
                         </div>
                     </div>
-                    <p>Two Double Beds : Featuring a flat-screen cable TV, free high-speed Wi-Fi, a small refrigerator, electronic safe, iron and board, and coffee table + machine. Guests are also provided with a stand up shower bathroom...</p>
+                    <p>{shortDesc}</p>
                     <div className={styles.infoButton}>More information <span>{`>>`}</span></div>
                 </div>
                 <div className={styles.price}>
                     <p>(USD-$)</p>
                     <p>Total rate excluding tax</p>
-                    <h3>$119.99</h3>
-                    <h1>$109.99</h1>
+                    <h3>$ {strikePrice}</h3>
+                    <h1>$ {price}</h1>
                     <button>BOOK NOW</button>
                 </div>
             </div>

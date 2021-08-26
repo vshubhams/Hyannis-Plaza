@@ -4,6 +4,7 @@ import styles from "./roomPage.module.css"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { getRooms } from "../Redux/rooms/actions"
+import { DetailTags } from "./Components/DetailTags/DetailTags"
 export const RoomsPage = () => {
     const dispatch = useDispatch();
 
@@ -13,7 +14,6 @@ export const RoomsPage = () => {
     }, [dispatch]);
 
     const rooms = useSelector((state) => state.app.rooms);
-    console.log('rooms:', rooms)
 
     return (
         <div className={styles.container}>
@@ -22,6 +22,7 @@ export const RoomsPage = () => {
                 <div className={styles.left}>left side</div>
                 <div className={styles.right}>
                     <div>ROOM & RATES</div>
+                    <DetailTags />
                     {rooms.map((el) => (
                         <RoomItem key={el.id} items={el} />
                     ))}

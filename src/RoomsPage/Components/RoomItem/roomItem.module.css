@@ -2,7 +2,12 @@
     box-shadow: 1px 1px 2px rgb(0 0 0 / 10%);
     border: 1px solid #ddd;
     padding: 15px;
+    margin-bottom: 6px;
     /* margin: 10px; */
+}
+.container:hover{
+    background-image: linear-gradient(#F4F4F4, #FFF);
+    border-color: #000;
 }
 .heading{
     display: flex;
@@ -74,6 +79,7 @@
 .infoButton{
     margin-top: 20px;
     width: fit-content;
+    border: solid #FFF 2px;
 }
 .infoButton:hover{
 border: solid #FF7D00 2px ;
@@ -96,6 +102,9 @@ color: #0081AB;
 .freebies>div>svg{
     fill: green;
 }
+.freebies p{
+    font-size: 14px;
+}
 .price{
     font-style: italic;
     text-align: center;
@@ -104,17 +113,19 @@ color: #0081AB;
 }
 .price>h1{
     color: #0081AB;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 .price>h3{
     color: #767676;
     text-decoration: line-through;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .price>P{
     color: #0081AB;
-    font-size: 14px;
+    font-size: 12px;
 }
 .price>button{
     color: #FFF;
@@ -133,6 +144,7 @@ color: #0081AB;
     padding: 6px 5px;
     border-radius: 7px;
     color: #b92424;
+    font-size: 16px;
 }
 .tag>svg{
     margin-right: 10px;
