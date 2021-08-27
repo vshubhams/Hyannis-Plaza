@@ -245,8 +245,104 @@ border-bottom: 1px dotted #aaa;
     margin-top: 0;
     margin: 1em 0 .5em;
 }
-.pkgwrt p:nth-child(2), .pkgwrt p:nth-child(3), .pkgwrt p:nth-child(4){
+.pkgwrt p:nth-child(2), .pkgwrt p:nth-child(3), .pkgwrt p:nth-child(4), .pkgwrt p:nth-child(5){
     text-align: center;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+.pkgwrt h2:nth-child(6){
+    word-wrap: break-word;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-wrap;
+    color: rgba(0,0,0,.75);
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    margin: 1em 0 .5em;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+}
+
+.pkgwrt>ul li h2{
+    word-wrap: break-word;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-wrap;
+    color: rgba(0,0,0,.75);
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    margin: 1em 0 .5em;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+    
+}
+ul{
+    list-style-type: none;
+}
+
+.pkgwrt h1{
+    text-align: center;
+    white-space: pre-wrap;
+    margin-bottom: 0;
+    margin: 1em 0 .5em;
+    color: rgba(26,26,26,.9);
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 39px;
+    letter-spacing: .6px;
+    text-transform: none;
+    line-height: 1.2em;
+
+}
+
+.bn{
+
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    padding-top: 17px;
+    text-align: center;
+   
+    transition: .1s opacity linear;
+    padding: 21px 34px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    
+    border-color: #36b3a8;
+    display: inline-block;
+    
+  
+    border-width: 0;
+    
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    line-height: normal;
+width: 170px;
+margin: auto;
+align-items: center;
+justify-content: center;
+text-align: center;
+border-radius: 300px;
+height: auto;
+color: #fff;
+    background-color: #36b3a8;
+        display: block;
+        margin-bottom: 60px;
 }

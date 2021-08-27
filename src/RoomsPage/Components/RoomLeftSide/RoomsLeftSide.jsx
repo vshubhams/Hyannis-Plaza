@@ -1,6 +1,6 @@
 import React from "react";
-import DatePicker from "../../../DatePicker";
-import {Dropdown1, Dropdown2} from "../../../Dropdown";
+import DatePicker from "./DatePicker";
+import {Dropdown1, Dropdown2} from "./Dropdown";
 import styles from "./RoomsLeftSide.module.css";
 const RoomsLeftSide = () => {
   return (
@@ -8,31 +8,31 @@ const RoomsLeftSide = () => {
       <div className={styles.cont}>
         <div className={styles.leftSide}>
           <h2 className={styles.heading1}>Your Stay</h2>
-          <DatePicker label="check-In" />       
-            <DatePicker label="check-out" />
+          <DatePicker label="check-In" id="date1"/>       
+            <DatePicker label="check-out" id="date2"/>
             <div className={styles.formGrp}>
               <div className={styles.inputGrp}>
-                <label for="checkIn" className={styles.checkInLabel}>
+                <label htmlFor="checkIn" className={styles.checkInLabel}>
                   Number of Rooms
                 </label>
                 <div className={styles.datePickCont}>
-                  <select id={styles.checkIn} role="listbox">
-                    <option role="option" value="1">
+                  <select id={styles.checkIn}>
+                    <option value="1">
                       1
                     </option>
-                    <option role="option" value="2">
+                    <option value="2">
                       2
                     </option>
-                    <option role="option" value="3">
+                    <option value="3">
                       3
                     </option>
-                    <option role="option" value="4">
+                    <option value="4">
                       4
                     </option>
-                    <option role="option" value="5">
+                    <option value="5">
                       5
                     </option>
-                    <option role="option" value="6">
+                    <option value="6">
                       6
                     </option>
                   </select>
@@ -58,23 +58,23 @@ const RoomsLeftSide = () => {
               <div className={styles.peoples}>
                 <label>Adults (21+)</label>
                 <div>
-                  <select class={styles.peoples_Sel_1} role="listbox">
-                    <option role="option" value="1">
+                  <select className={styles.peoples_Sel_1}>
+                    <option value="1">
                       1
                     </option>
-                    <option role="option" value="2">
+                    <option value="2">
                       2
                     </option>
-                    <option role="option" value="3">
+                    <option value="3">
                       3
                     </option>
-                    <option role="option" value="4">
+                    <option value="4">
                       4
                     </option>
-                    <option role="option" value="5">
+                    <option value="5">
                       5
                     </option>
-                    <option role="option" value="6">
+                    <option value="6">
                       6
                     </option>
                   </select>
@@ -83,23 +83,23 @@ const RoomsLeftSide = () => {
               <div className={styles.peoples}>
                 <label>Child (0-10)</label>
                 <div>
-                  <select class={styles.peoples_Sel_1} role="listbox">
-                    <option role="option" value="1">
+                  <select className={styles.peoples_Sel_1}>
+                    <option value="1">
                       1
                     </option>
-                    <option role="option" value="2">
+                    <option value="2">
                       2
                     </option>
-                    <option role="option" value="3">
+                    <option value="3">
                       3
                     </option>
-                    <option role="option" value="4">
+                    <option value="4">
                       4
                     </option>
-                    <option role="option" value="5">
+                    <option value="5">
                       5
                     </option>
-                    <option role="option" value="6">
+                    <option value="6">
                       6
                     </option>
                   </select>

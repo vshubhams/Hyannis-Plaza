@@ -1,0 +1,47 @@
+.accessibility {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.accessibility > .impAccess > h4 {
+  margin-bottom: 4%;
+  font-size: 0.9rem;
+}
+
+.accessibility > .impAccess > .pGoal {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.77);
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.accessibility > .impAccess > .nextGoal {
+  font-family: adobe-garamond-pro;
+  color: rgba(0, 0, 0, 0.77);
+  font-size: 1.2rem;
+}
+
+.accessibility > .address {
+  margin-top: 2rem;
+}
+
+.accessibility > .address > p {
+  margin-bottom: 1rem;
+}
+
+.accessibility > .address > ul {
+  margin-left: 2rem;
+}
+
+.accessibility > .address > ul > li {
+  line-height: 2rem;
+}
+
+.accessibility > .address > .braekTag {
+  margin-top: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

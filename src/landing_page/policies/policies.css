@@ -1,0 +1,29 @@
+.policies {
+  margin: 2rem;
+}
+
+.policies > p {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.policies > div {
+  margin-left: 14%;
+  width: 80%;
+}
+
+.policies > div > ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.policies > div > ul > li {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 2.5em;
+}
