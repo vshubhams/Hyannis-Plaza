@@ -8,7 +8,7 @@ import WcIcon from '@material-ui/icons/Wc';
 import GroupsIcon from '@material-ui/icons/Groups';
 import CircleNotificationsIcon from '@material-ui/icons/CircleNotifications';
 import { useDispatch } from 'react-redux';
-import { setIsOpen } from '../../../Redux/rooms/actions';
+import { setIsOpen } from '../../../../Redux/rooms/actions';
 
 export const RoomItem = ({ items }) => {
 
@@ -18,12 +18,6 @@ export const RoomItem = ({ items }) => {
         const setOpenAction = setIsOpen(true);
         dispatch(setOpenAction)
     };
-
-    const handleClose = () => {
-        const setOpenAction = setIsOpen(false);
-        dispatch(setOpenAction)
-    };
-
 
     // console.log(items)
     const { title,image,shortDesc,price,strikePrice,bed,baseOcc,maxOcc,maxAdult} = items;

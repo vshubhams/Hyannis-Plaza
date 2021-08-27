@@ -35,7 +35,7 @@ const Header = () => {
         <Grid container className={cla.falign} spacing={2} direction="row" alignItems="center" justifyContent='space-between'>
             <Grid item className={cla.imgStylefix}>
                 <Typography component='div'>
-                    <img src='https://imgur.com/tdmG8UG.png' className={cla.imgStyle} />
+                    <img alt="header" src='https://imgur.com/tdmG8UG.png' className={cla.imgStyle} />
                 </Typography>
             </Grid>
             <Grid item className={cla.gridItem}>

@@ -4,8 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { useDispatch, useSelector } from 'react-redux';
-import { setIsOpen } from '../../../Redux/rooms/actions';
-import { CallMissedSharp } from '@material-ui/icons';
+import { setIsOpen } from '../../../../Redux/rooms/actions';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -38,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TransitionsModal() {
+    const open = useSelector((state) => state.app.isOpen);
     const classes = useStyles();
     const dispatch = useDispatch();
 
-    const open = useSelector((state) => state.app.isOpen);
 
     const handleClose = () => {
         const setOpenAction = setIsOpen(false);
@@ -77,6 +76,7 @@ export default function TransitionsModal() {
                                 verma
                             </div>
                         </div>
+                        <button onClick={handleClose}>Close</button>
                     </div>
                 </Fade>
             </Modal>
