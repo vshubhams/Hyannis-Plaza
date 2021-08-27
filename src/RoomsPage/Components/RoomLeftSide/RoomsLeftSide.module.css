@@ -37,7 +37,7 @@ input, button, select, textarea {
 .heading1{
     color: #555;
     font-size: 22px;
-    margin: 10px 0px;
+    margin: 15px 0px;
     text-transform: uppercase;
 }
 .stayList{
@@ -125,9 +125,9 @@ input, button, select, textarea {
    /* padding: 5px; */
 }
 .addIt{
-    margin:5px 0;
+    margin:15px 0;
     display: inline-flex;
-    gap: 259px;
+    gap: 260px;
 }
 .addIt > h2{
     font-weight: 700;
@@ -136,13 +136,16 @@ input, button, select, textarea {
     text-shadow: 1px 1px 0 rgb(255 255 255 / 50%);
     margin: 5px 0;
 }
+.addIt > svg{
+    cursor: pointer;
+}
 .peoples_outer{
   
 display: flex;
 gap: 5px;
 border-bottom: 1px dotted #aaa;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
 }
 .peoples{
@@ -188,14 +191,62 @@ border-bottom: 1px dotted #aaa;
 } */
 .promo{
     display: flex;
+    margin: 10px 0px;
 }
 @media only screen and (min-width: 768px){
 
     .cont{
-        width: 25%;
+        width: 100%;
         float: left;
+        height: 100%;
     }
 
 }
 
 
+
+
+
+
+
+/****************PACKAGES**************/
+
+.pkgBody{
+    box-sizing: border-box;
+    width: auto;
+    margin: auto;
+    max-width: 1020px;
+    padding: 96px 32px;
+    /* height: 150px; */
+}
+.pkgBody > img {
+    height: 400px;
+    width: 100%;
+}
+.pkgwrt{
+    position: relative;
+    height: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -.06px;
+    line-height: 1.8em;
+    color: rgba(0,0,0,.77);
+}
+
+.pkgwrt > h2:nth-child(1){
+    text-align:center;
+    white-space:pre-wrap;
+    margin-top: 0;
+    margin: 1em 0 .5em;
+}
+.pkgwrt p:nth-child(2), .pkgwrt p:nth-child(3), .pkgwrt p:nth-child(4){
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

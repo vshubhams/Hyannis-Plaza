@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    border-bottom: solid 1px #343644;
+    grid-template-columns: 25% 75%;
+}
+.left{
+text-align: center;
+}
+.left>img{
+    width: 108px;
+    padding: 5px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: #343644;
+    color: #FFF;
+}
+.right>div{
+    display: flex;
+}
+.right svg{
+    width: 22px;
+}
+.row2>div{
+    display: flex;
+    margin-left: 15px;
+}
+.row2>div>svg{
+    margin-right: 5px;
+}

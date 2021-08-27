@@ -1,17 +1,11 @@
-
 import './App.css';
-// import DatePicker from './DatePicker';
-import RoomsLeftSide from './RoomsLeftSide';
-// import Dropdown from './Dropdown';
-
+import Package from './Packages/Package';
+import { RoomsPage } from './RoomsPage/RoomsPage';
 function App() {
   return (
     <div className="App">
-    
-    <RoomsLeftSide />
-    {/* <Dropdown /> */}
-    {/* <DatePicker label="checkIN" /> */}
-
+      <RoomsPage></RoomsPage>
+      {/* <Package /> */}
     </div>
   );
 }
