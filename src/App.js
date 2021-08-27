@@ -1,4 +1,5 @@
 import './App.css';
+import Package from './Packages/Package';
 import { RoomsPage } from './RoomsPage/RoomsPage';
 import { Switch, Route } from "react-router-dom";
 import Loader from "react-loader-spinner";

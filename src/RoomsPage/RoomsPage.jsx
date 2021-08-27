@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { getRooms } from "../Redux/rooms/actions"
 import { DetailTags } from "./Components/DetailTags/DetailTags"
+import RoomsLeftSide from "./Components/RoomLeftSide/RoomsLeftSide"
 export const RoomsPage = () => {
     const dispatch = useDispatch();
 
@@ -19,7 +20,7 @@ export const RoomsPage = () => {
         <div className={styles.container}>
             <Header />
             <div className={styles.main}>
-                <div className={styles.left}>left side</div>
+                <div className={styles.left}><RoomsLeftSide /></div>
                 <div className={styles.right}>
                     <div>ROOM & RATES</div>
                     <DetailTags />
