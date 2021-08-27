@@ -7,8 +7,24 @@ import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import WcIcon from '@material-ui/icons/Wc';
 import GroupsIcon from '@material-ui/icons/Groups';
 import CircleNotificationsIcon from '@material-ui/icons/CircleNotifications';
+import { useDispatch } from 'react-redux';
+import { setIsOpen } from '../../../Redux/rooms/actions';
 
 export const RoomItem = ({ items }) => {
+
+    const dispatch = useDispatch();
+    
+    const handleOpen = () => {
+        const setOpenAction = setIsOpen(true);
+        dispatch(setOpenAction)
+    };
+
+    const handleClose = () => {
+        const setOpenAction = setIsOpen(false);
+        dispatch(setOpenAction)
+    };
+
+
     // console.log(items)
     const { title,image,shortDesc,price,strikePrice,bed,baseOcc,maxOcc,maxAdult} = items;
     return (
@@ -18,7 +34,7 @@ export const RoomItem = ({ items }) => {
                 <div>$10.00 OFF</div>
             </div>
             <div className={styles.main}>
-                <div className={styles.imgBox}>
+                <div onClick={handleOpen} className={styles.imgBox}>
                     <img src={image} alt="" />
                 </div>
                 <div className={styles.content}>
@@ -47,7 +63,7 @@ export const RoomItem = ({ items }) => {
                         </div>
                     </div>
                     <p>{shortDesc}</p>
-                    <div className={styles.infoButton}>More information <span>{`>>`}</span></div>
+                    <div onClick={handleOpen} className={styles.infoButton}>More information <span>{`>>`}</span></div>
                 </div>
                 <div className={styles.price}>
                     <p>(USD-$)</p>

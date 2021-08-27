@@ -6,6 +6,8 @@ import { useEffect } from "react"
 import { getRooms } from "../Redux/rooms/actions"
 import { DetailTags } from "./Components/DetailTags/DetailTags"
 import RoomsLeftSide from "./Components/RoomLeftSide/RoomsLeftSide"
+import Modal from "./Components/Modal/Modal"
+
 export const RoomsPage = () => {
     const dispatch = useDispatch();
 
@@ -29,6 +31,7 @@ export const RoomsPage = () => {
                     ))}
                 </div>
             </div>
+            <Modal />
         </div>
     )
 }
