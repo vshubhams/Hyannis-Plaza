@@ -1,6 +1,6 @@
 import React from "react";
-import DatePicker from "../../../DatePicker";
-import {Dropdown1, Dropdown2} from "../../../Dropdown";
+import DatePicker from "./DatePicker";
+import {Dropdown1, Dropdown2} from "./Dropdown";
 import styles from "./RoomsLeftSide.module.css";
 const RoomsLeftSide = () => {
   return (
