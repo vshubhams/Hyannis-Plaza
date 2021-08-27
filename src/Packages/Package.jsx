@@ -20,7 +20,9 @@ const Package = () => {
            <h2><strong>PACKAGE INCLUDES:</strong></h2>
            <ul><li><h2><strong>CHAMPAGNE FOR TWO  </strong></h2></li><li><h2 ><strong> FLOWERS </strong></h2></li><li><h2 ><strong>CHOCOLATES</strong></h2></li></ul>
            <h1>Add onto any Room for $50</h1>
+          
            </div>
+           <button className={styles.bn}>BOOK NOW</button>
 
         </>
     )
