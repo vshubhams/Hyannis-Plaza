@@ -6,6 +6,7 @@ import Loader from "react-loader-spinner";
 import { useEffect, useState } from 'react';
 
 import Routing from './Routing/Routing';
+// import { RoomsPage } from './RoomsPage/RoomsPage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <Routing/>
       {/* <Package /> */}
+      {/* <RoomsPage /> */}
     </div>
   ):(<Loader className="Loader" type="ThreeDots" color="#3d9991" secondaryColor='red' height={120} width={120} timeout={3000}/>);
 }
