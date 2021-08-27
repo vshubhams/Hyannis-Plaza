@@ -1,7 +1,8 @@
 import React from 'react'
-import { Header } from '../RoomsPage/Components/Header/Header'
+// import { Header } from '../RoomsPage/Components/Header/Header'
+import Header from '../landing_page/header/header';
 import styles from '../RoomsPage/Components/RoomLeftSide/RoomsLeftSide.module.css';
-
+import Footer from '../landing_page/footer/footer';
 const Package = () => {
     return (
         <>
@@ -23,6 +24,9 @@ const Package = () => {
           
            </div>
            <button className={styles.bn}>BOOK NOW</button>
+           <div>
+               <Footer />
+           </div>
 
         </>
     )

@@ -1,0 +1,118 @@
+.mainSize > .content {
+  margin: 3rem;
+  text-align: center;
+}
+
+.mainSize > .content > h1 {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+
+.mainSize > .content > p {
+  margin: 1rem;
+  padding: 1rem;
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: -0.06px;
+  line-height: 1.8em;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+.mainSize > .imgDes {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mainSize > .imgDes > div {
+  width: 35%;
+}
+
+.mainSize > .imgDes > div > img {
+  height: 15rem;
+  width: 100%;
+}
+
+.mainSize > .imgDes > div > .details {
+  text-align: center;
+  font-family: adobe-garamond-pro;
+  margin: 1rem;
+}
+
+.mainSize > .imgDes > div > .details > .first {
+  color: #3d9991;
+  font-size: 2.2rem;
+  padding: 0.2rem;
+  font-family: adobe-garamond-pro;
+}
+
+.mainSize > .imgDes > div > .details > .second {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  line-height: 1.8em;
+}
+
+.mainSize > .imgDes > div > .details > .third {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem;
+  color: #3d9991;
+}
+
+.mainSize > .features {
+  width: 90%;
+  margin: 3rem;
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+}
+
+.mainSize > .features > div > div > div {
+  text-align: center;
+}
+
+.mainSize > .features > div > div > div > p {
+  font-size: 1.3rem;
+  font-family: adobe-garamond-pro;
+  margin: 2rem;
+  color: #3d9991;
+}
+
+.mainSize > .footerStrip {
+  background-color: #f7f7f7;
+  width: 100%;
+  min-height: 4rem;
+  text-align: center;
+}
+
+.mainSize > .footerStrip > p {
+  font-size: 20px;
+  font-family: adobe-garamond-pro;
+  color: #3d9991;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 30px;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainSize > .imgDes {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .mainSize > .imgDes > div {
+    width: 80%;
+  }
+}
