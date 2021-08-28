@@ -1,5 +1,6 @@
 import '../main/main.css';
 import { Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 export default function Main() {
     return (<div className='mainSize'>
     <div className='content'>
@@ -50,7 +51,7 @@ export default function Main() {
 </div>
 
 <div className="footerStrip">
-    <p>** GUARANTEED BEST RATE WHEN YOU BOOK WITH US DIRECTLY **</p>
+    <p>** <Link to='/booking'> GUARANTEED BEST RATE WHEN YOU BOOK WITH US DIRECTLY </Link> **</p>
         </div>
     </div>)
 }
