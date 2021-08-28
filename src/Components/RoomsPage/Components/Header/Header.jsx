@@ -2,10 +2,13 @@ import styles from './header.module.css'
 import RoomIcon from '@material-ui/icons/Room';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneEnabledIcon from '@material-ui/icons/PhoneEnabled';
+import { useState } from 'react';
+import { Redirect } from 'react-router';
 export const Header = () => {
-    return (
+    const [redi, setredi] = useState(false);
+    return redi?<Redirect to='/'/>:(
         <div className={styles.container}>
-            <div className={styles.left}>
+            <div className={styles.left} onClick={()=>setredi(true)}>
                 <img src="./hyannis-logo.png" alt="" />
                 <p>Hyannis Plaza Hotel, Hyannis</p>
             </div>
