@@ -1,10 +1,10 @@
 import React from 'react'
-import Discription from '../comp1/Discription'
+import Description from './Description/Description'
 
 import styles from './Bookpage.module.css'
-import Sidebar1 from '../Sidebar/Sidebar1'
-import GuestDetail from '../comp2/Guest_Detail'
-import {Header} from '../../RoomsPage/Components/Header/Header'
+import Sidebar1 from './Sidebar/Sidebar1'
+import GuestDetail from './Guest_Detail/Guest_Detail'
+import { Header } from '../RoomsPage/Components/Header/Header'
 
 function BookPage() {
     return (
@@ -15,7 +15,7 @@ function BookPage() {
                 <Sidebar1 />
             </div>
             <div>
-                <Discription />
+                <Description />
                 <GuestDetail />
             </div>
             </div>

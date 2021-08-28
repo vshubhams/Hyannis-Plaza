@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Discription.module.css'
+import styles from './Description.module.css'
 import SmokeFreeIcon from '@material-ui/icons/SmokeFree';
 
-function Discription() {
+function Description() {
     return (
         <div className={styles.main}>
             <p className={styles.size}>BOOKING DETAILS</p>
@@ -86,4 +86,4 @@ function Discription() {
     )
 }
 
-export default Discription
+export default Description
