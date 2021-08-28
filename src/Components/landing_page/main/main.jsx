@@ -10,7 +10,7 @@ export default function Main() {
 
 <div className='imgDes'>
     <div>
-        <img src='https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1628425724735-4UIRU963VFA97YHQ9K4J/%5C?format=500w' />
+        <img alt="main_image" src='https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1628425724735-4UIRU963VFA97YHQ9K4J/%5C?format=500w' />
         <div className="details">
             <p className='first'>Gallery</p>
             <p className='second'>Click to see more high quality pictures of our rooms and property amenities. </p>
@@ -18,7 +18,7 @@ export default function Main() {
         </div>
     </div>
     <div>
-        <img src='https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1628425797548-GFQDPVQ3J0P2KI2DCMQ9/dsc05798_optimized.jpg?format=500w' />
+        <img alt="main_image" src='https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1628425797548-GFQDPVQ3J0P2KI2DCMQ9/dsc05798_optimized.jpg?format=500w' />
         <div className="details">
             <p className='first'>Book Now</p>
             <p className='second'>Ready to take the next step? Click here to book your room through our secure platform.</p>
@@ -32,19 +32,19 @@ export default function Main() {
         <Grid item xl={4} md={4} sm={12}>
             <div>
                 <p>ATTRACTIONS</p>
-                <img src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625843316966-YT0BPIW8JKJW2AX0WYBK/image-asset.jpeg?format=300w" width='250vh' height='150vh' />
+                <img alt="main_image" src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625843316966-YT0BPIW8JKJW2AX0WYBK/image-asset.jpeg?format=300w" width='250vh' height='150vh' />
             </div>
         </Grid>
         <Grid item xl={4} md={4} sm={12}>
             <div>
                 <p>PACKAGES</p>
-                <img src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625844873346-5QD8SVZU1CNP7CXY3UQC/Luxury-Turndown-1.jpg?format=300w" width='250vh' height='150vh' />
+                <img alt="main_image" src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625844873346-5QD8SVZU1CNP7CXY3UQC/Luxury-Turndown-1.jpg?format=300w" width='250vh' height='150vh' />
             </div>
         </Grid>
         <Grid item xl={4} md={4} sm={12}>
             <div>
                 <p>RESTAURANTS</p>
-                <img src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625844188813-IQHAA2VA7UB18863J9FP/download.jpg?format=300w" width='250vh' height='150vh' />
+                <img alt="main_image" src="https://images.squarespace-cdn.com/content/v1/5af3725e697a98ab349b91e4/1625844188813-IQHAA2VA7UB18863J9FP/download.jpg?format=300w" width='250vh' height='150vh' />
             </div>
         </Grid>
     </Grid>

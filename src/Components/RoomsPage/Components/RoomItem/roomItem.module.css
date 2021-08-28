@@ -30,7 +30,13 @@
     margin-right: 10px;
 }
 .imgBox>img{
+    box-sizing: border-box;
+    padding: 1.5px;
+    box-sizing: border-box;
     width: 100%;
+}
+.imgBox>img:hover{
+    border: solid #FF7D00 ;
 }
 .content>h2{
     color: #957027;

@@ -1,17 +1,15 @@
 import './App.css';
-import Package from './Packages/Package';
-import { RoomsPage } from './RoomsPage/RoomsPage';
-import { Switch, Route } from "react-router-dom";
 import Loader from "react-loader-spinner";
 import { useEffect, useState } from 'react';
 
-import Routing from './Routing/Routing';
+import Routing from './Routes/Routes';
+
 function App() {
 
   const [load, setload] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setload(true);
     }, 3000);
   }, []);

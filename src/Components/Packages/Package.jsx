@@ -1,7 +1,8 @@
 import React from 'react'
-import { Header } from '../RoomsPage/Components/Header/Header'
+// import { Header } from '../RoomsPage/Components/Header/Header'
+import Header from '../landing_page/header/header';
 import styles from '../RoomsPage/Components/RoomLeftSide/RoomsLeftSide.module.css';
-
+import Footer from '../landing_page/footer/footer';
 const Package = () => {
     return (
         <>
@@ -20,6 +21,11 @@ const Package = () => {
            <h2><strong>PACKAGE INCLUDES:</strong></h2>
            <ul><li><h2><strong>CHAMPAGNE FOR TWO  </strong></h2></li><li><h2 ><strong> FLOWERS </strong></h2></li><li><h2 ><strong>CHOCOLATES</strong></h2></li></ul>
            <h1>Add onto any Room for $50</h1>
+          
+           </div>
+           <button className={styles.bn}>BOOK NOW</button>
+           <div>
+               <Footer />
            </div>
 
         </>

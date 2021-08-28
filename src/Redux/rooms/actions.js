@@ -2,7 +2,8 @@ import axios from "axios";
 import { 
       GET_ROOMS_FAILURE, 
       GET_ROOMS_REQUEST,
-      GET_ROOMS_SUCCESS} from "./actionTypes";
+      GET_ROOMS_SUCCESS,
+      SET_ISOPEN} from "./actionTypes";
 
 export const getRoomsRequest =()=>{
     return{
@@ -31,4 +32,11 @@ export const getRooms =() =>(dispatch)=>{
     }).catch((err)=>{
         dispatch(getRoomsFailure(err))
     })
+}
+
+export const setIsOpen = (payload) => {
+    return {
+        type: SET_ISOPEN,
+        payload:payload
+    }
 }

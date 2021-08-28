@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
   
-const DatePicker = ({label}) => {
+const DatePicker = ({label, id}) => {
     const classes = useStyles();
    
     var today = new Date();
@@ -31,11 +31,12 @@ today = dd + '-' + mm + '-' + yyyy;
         <div>
               <form className={classes.container} noValidate>
       <TextField
-        id="date"
+        id={id}
         label={label}
         type="date"
-    //    value={today}
-        defaultValue="29-08-2021"
+      //  value={today}
+        // format="dd-mm-yyyy"
+        // defaultValue="29-08-2021"
         className={classes.textField}
         InputLabelProps={{
           shrink: true,
