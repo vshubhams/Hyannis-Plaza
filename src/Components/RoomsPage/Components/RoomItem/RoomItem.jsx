@@ -67,7 +67,7 @@ export const RoomItem = ({ items }) => {
                     <p>Total rate excluding tax</p>
                     <h3>$ {strikePrice}</h3>
                     <h1>$ {price}</h1>
-                    <button onClick={()=>{history.push(`/book/${id}`)}}>BOOK NOW</button>
+                    <button onClick={() => { history.push(`/book/${id}`)}}>BOOK NOW</button>
                 </div>
             </div>
             <div className={styles.freebies}>

@@ -1,11 +1,6 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
-
-import Divider from '@material-ui/core/Divider';
-import { Box } from '@material-ui/core';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import { MenuItem } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -110,33 +105,14 @@ function GuestDetail() {
 
   return (
     <div className={classes.box}>
-      <Box className={classes.flex}>
-        <NotificationsIcon />
-        <Typography
-          variant='subtitle2'
-          align='justify'
-          className={classes.padd}
-        >Lowest Price Guaranteed | Book Now Pay At Hotel</Typography>
-      </Box>
-      <Divider />
-      <Typography
-        variant='h5'
-        align='justify'
-        className={classes.padd}
-      >GUEST DETAILS</Typography>
-      <Divider />
-
-
-
       <form className={classes.container} noValidate autoComplete="off" onSubmit={handleSubmit}>
         <div>
           <ValidationTextField
             label="First Name"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
-            id="outlined1"
+            variant="filled"
+            size="small"
             value={firstname}
             onChange={e => setFirstName(e.target.value)}
           />
@@ -146,9 +122,8 @@ function GuestDetail() {
             label="Last Name"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
-            id="outlined2"
+            variant="filled"
+            size="small"
             value={lastname}
             onChange={e => setLastName(e.target.value)}
           />
@@ -158,22 +133,20 @@ function GuestDetail() {
             label="Email"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             type="email"
-            id="outlined3"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
         </div>
         <div>
           <ValidationTextField
-            id="outlined4"
             label="Phone"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             type="Number"
             value={phone}
             onChange={e => setPhone(e.target.value)}
@@ -181,48 +154,44 @@ function GuestDetail() {
         </div>
         <div>
           <ValidationTextField
-            id="outlined5"
             label="Address"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             value={address}
             onChange={e => setAddress(e.target.value)}
           />
         </div>
         <div>
           <ValidationTextField
-            id="outlined6"
             label="City"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             value={city}
             onChange={e => setCity(e.target.value)}
           />
         </div>
         <div>
           <ValidationTextField
-            id="outlined7"
             label="State"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             value={state}
             onChange={e => setState(e.target.value)}
           />
         </div>
         <div>
           <ValidationTextField
-            id="outlined8"
             label="Country"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             select
             onChange={e => setCountry(e.target.value)}
             value={country}
@@ -236,12 +205,11 @@ function GuestDetail() {
         </div>
         <div>
           <ValidationTextField
-            id="outlined9"
             label="ZIP Code"
             required
             fullWidth
-            variant="outlined"
-            size="medium"
+            variant="filled"
+            size="small"
             type='number'
             value={zipCode}
             onChange={e => setZipCode(e.target.value)}
