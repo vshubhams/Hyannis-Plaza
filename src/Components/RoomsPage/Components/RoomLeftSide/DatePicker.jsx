@@ -34,9 +34,9 @@ today = dd + '-' + mm + '-' + yyyy;
         id={id}
         label={label}
         type="date"
-      //  value={today}
-        // format="dd-mm-yyyy"
-        // defaultValue="29-08-2021"
+       value={today}
+        // format="dd/mm/yyyy"
+        defaultValue="28/08/2021"
         className={classes.textField}
         InputLabelProps={{
           shrink: true,

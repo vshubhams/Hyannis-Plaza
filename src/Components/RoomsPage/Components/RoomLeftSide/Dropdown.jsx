@@ -6,7 +6,12 @@ import Input from '@material-ui/core/Input';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
+import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Filter } from '@material-ui/icons';
+import { getFilterRoom } from '../../../../Redux/rooms/actions';
+
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 400,
         
       },
+      chkb:{
+        // backgroundColor: "rgb(84,18,2)"
+        color: "rgb(84,18,2)"
+      }
 
 }));
 
@@ -33,10 +42,9 @@ const MenuProps = {
 };
 
 const names = [
-    'All Room',
     'Two Double Beds',
     'Regency Suite',
-    'Crown Victorial',
+    'Crown Victorian',
     'Plaza Suite',
     'Royal Victorian Suite',
     'Family Suite',
@@ -55,13 +63,23 @@ const names = [
 
 const Dropdown1 = () => {
     const classes = useStyles();
-
+    // const rooms = useSelector((state) => state.app.rooms);
    
     const [personName, setPersonName] = React.useState([]);
   
+    const dispatch = useDispatch();
+
     const handleChange = (event) => {
       setPersonName(event.target.value);
+      const getFilterAction = getFilterRoom(event.target.value);
+      dispatch(getFilterAction);
+      // var my = event.target.value;
+      // console.log(event.target.value);
+      
     };
+
+    
+    
   
     // const handleChangeMultiple = (event) => {
     //   const { options } = event.target;
@@ -90,7 +108,8 @@ const Dropdown1 = () => {
         >
           {names.map((name) => (
             <MenuItem key={name} value={name}>
-              <Checkbox checked={personName.indexOf(name) > -1} />
+              <Checkbox checked={personName.indexOf(name) > -1 }  className={classes.chkb} color="primary"/>
+              
               <ListItemText primary={name} />
             </MenuItem>
           ))}

@@ -3,7 +3,8 @@ import {
       GET_ROOMS_FAILURE, 
       GET_ROOMS_REQUEST,
       GET_ROOMS_SUCCESS,
-      SET_ISOPEN} from "./actionTypes";
+      SET_ISOPEN,
+    GET_FILTER_ROOM} from "./actionTypes";
 
 export const getRoomsRequest =()=>{
     return{
@@ -38,5 +39,16 @@ export const setIsOpen = (payload) => {
     return {
         type: SET_ISOPEN,
         payload:payload
+    }
+}
+
+
+export const getFilterRoom = (payload) => {
+
+// console.log(payload)
+
+    return {
+        type: GET_FILTER_ROOM,
+        payload
     }
 }

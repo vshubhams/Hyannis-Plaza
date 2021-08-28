@@ -2,14 +2,16 @@ import {
     GET_ROOMS_REQUEST,
     GET_ROOMS_SUCCESS,
     GET_ROOMS_FAILURE,
-    SET_ISOPEN
+    SET_ISOPEN,
+    GET_FILTER_ROOM
 } from "./actionTypes"
 
 const initState ={
     rooms: [],
     isLoading:false,
     isError: false,
-    isOpen: false
+    isOpen: false,
+    filterRoom: []
 };
 
 const roomsReducer = (state = initState, {type,payload})=>{
@@ -37,6 +39,11 @@ const roomsReducer = (state = initState, {type,payload})=>{
                 ...state,
                 isOpen: payload
             }
+            case GET_FILTER_ROOM:
+                return {
+                    ...state,
+                    filterRoom: payload
+                }
         default:
             return state;
     }

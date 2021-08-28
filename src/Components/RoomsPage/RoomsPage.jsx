@@ -10,6 +10,17 @@ import Modal from "./Components/Modal/Modal"
 
 export const RoomsPage = () => {
     const rooms = useSelector((state) => state.app.rooms);
+    const filterRoom = useSelector((state) => state.app.filterRoom)
+    const roomArr = [];
+filterRoom.forEach(element => {
+    console.log("element" ,element);
+        const found = rooms.filter(el => el.title === element)
+        roomArr.push(found[0]);
+    });
+    console.log(roomArr);
+    
+
+    // console.log(filterRoom);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -17,6 +28,8 @@ export const RoomsPage = () => {
         dispatch(getRoomsAction)
     }, [dispatch]);
 
+
+    
 
     return (
         <div className={styles.container}>
@@ -26,9 +39,11 @@ export const RoomsPage = () => {
                 <div className={styles.right}>
                     <div>ROOM & RATES</div>
                     <DetailTags />
-                    {rooms.map((el) => (
+                    {filterRoom.length === 0 ? rooms.map((el) => (
                         <RoomItem key={el.id} items={el} />
-                    ))}
+                    )) : roomArr.map((el) => (
+                        <RoomItem key={el.id} items={el} />
+                    )) }
                 </div>
             </div>
             <Modal />
