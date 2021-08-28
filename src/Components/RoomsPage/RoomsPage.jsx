@@ -16,7 +16,6 @@ export const RoomsPage = () => {
         const found = rooms.filter(el => el.title === element)
         roomArr.push(found[0]);
     });
-    console.log(roomArr);
 
     window.scrollTo(0,0)
 

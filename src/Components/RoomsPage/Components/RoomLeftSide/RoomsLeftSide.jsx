@@ -8,8 +8,8 @@ const RoomsLeftSide = () => {
       <div className={styles.cont}>
         <div className={styles.leftSide}>
           <h2 className={styles.heading1}>Your Stay</h2>
-          <DatePicker label="check-In" id="date1"/>       
-            <DatePicker label="check-out" id="date2"/>
+          <DatePicker label="Check-In" id="date1"/>       
+            <DatePicker label="Check-Out" id="date2"/>
             <div className={styles.formGrp}>
               <div className={styles.inputGrp}>
                 <label htmlFor="checkIn" className={styles.checkInLabel}>
