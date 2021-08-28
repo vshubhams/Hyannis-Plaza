@@ -2,6 +2,7 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { MenuItem } from '@material-ui/core';
+import styles from "./GuestDetail.module.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -104,7 +105,8 @@ function GuestDetail() {
 
 
   return (
-    <div className={classes.box}>
+    <div className={styles.wrapper}>
+      <h3>GUEST DETAILS</h3>
       <form className={classes.container} noValidate autoComplete="off" onSubmit={handleSubmit}>
         <div>
           <ValidationTextField
