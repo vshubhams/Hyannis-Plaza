@@ -5,6 +5,7 @@ import Pramotion from '../Components/landing_page/promotion/promotion';
 import Accessibility from '../Components/landing_page/accessibility/accessibility'
 import Home from "../Components/landing_page/home";
 import { RoomsPage } from "../Components/RoomsPage/RoomsPage";
+import BookPage from "../Components/bookPage/BookPage";
 
 export default function Routing() {
   return (
@@ -34,8 +35,12 @@ export default function Routing() {
         </Home>
       </Route>
 
-      <Route exact path='/booking'>
+      <Route exact path='/rooms'>
         <RoomsPage />
+      </Route>
+
+      <Route exact path='/book/:id'>
+        <BookPage />
       </Route>
 
     </Switch>

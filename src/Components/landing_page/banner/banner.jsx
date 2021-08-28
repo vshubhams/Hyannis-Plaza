@@ -3,7 +3,7 @@ import { Redirect } from 'react-router';
 import '../banner/banner.css';
 export default function Banner() {
     const [redi,setredi]=useState(false)
-    return redi?<Redirect to='/booking'/>:(<div className='bannerSize'>
+    return redi?<Redirect to='/rooms'/>:(<div className='bannerSize'>
         
         <div className="fontDesign">
             <p className="hotelName"><strong>Hyannis Plaza Hotel </strong></p>
