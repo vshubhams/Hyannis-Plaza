@@ -28,7 +28,7 @@ export const RoomsPage = () => {
                     <DetailTags />
                     {rooms.map((el) => (
                         <RoomItem key={el.id} items={el} />
-                    ))}
+                        ))}
                 </div>
             </div>
             <Modal />

@@ -14,13 +14,14 @@ export const RoomItem = ({ items }) => {
 
     const dispatch = useDispatch();
     
+    
+    // console.log(items)
+    const { title,image,shortDesc,price,strikePrice,bed,baseOcc,maxOcc,maxAdult,id} = items;
     const handleOpen = () => {
-        const setOpenAction = setIsOpen(true);
+        const payload={id,isOpen:true}
+        const setOpenAction = setIsOpen(payload);
         dispatch(setOpenAction)
     };
-
-    // console.log(items)
-    const { title,image,shortDesc,price,strikePrice,bed,baseOcc,maxOcc,maxAdult} = items;
     return (
         <div className={styles.container}>
             <div className={styles.heading}>

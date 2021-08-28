@@ -9,7 +9,7 @@ const initState ={
     rooms: [],
     isLoading:false,
     isError: false,
-    isOpen: false
+    modal:{isOpen:false,id:""}
 };
 
 const roomsReducer = (state = initState, {type,payload})=>{
@@ -35,7 +35,7 @@ const roomsReducer = (state = initState, {type,payload})=>{
         case SET_ISOPEN:
             return {
                 ...state,
-                isOpen: payload
+                modal: {id:payload.id,isOpen:payload.isOpen}
             }
         default:
             return state;
