@@ -22,15 +22,15 @@ export default function Routing() {
       </Route>
 
       <Route exact path='/promotions'>
-        <Home />
-        <Pramotion />
-        <Home />
+        <Home>
+          <Pramotion />
+        </Home>
       </Route>
 
       <Route exact path='/accessibility'>
-        <Home />
+        <Home>
         <Accessibility />
-        <Home />
+        </Home>
       </Route>
 
       <Route exact path='/booking'>

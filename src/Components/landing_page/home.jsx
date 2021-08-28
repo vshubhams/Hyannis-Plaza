@@ -7,7 +7,7 @@ export default function Home({ banner,children }) {
         <>
             <Header />
             {
-                banner?<Banner/>:""
+             banner?<Banner/>:""
             }
              {children}
             <Footer/>

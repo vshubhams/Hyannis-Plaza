@@ -1,4 +1,7 @@
 import { Container, makeStyles,Grid, Typography } from '@material-ui/core';
+import { useState } from 'react';
+import { Link, Redirect } from 'react-router-dom';
+import styles from './header.css';
 const useStyles = makeStyles((theme) => ({
     cont: {
         width: '100%',
@@ -31,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
 }))
 const Header = () => {
     const cla = useStyles();
-    return (<Container className={cla.cont}>
+    const [redi, setredi] = useState(false);
+    return redi?<Redirect to='/booking'/>:(<Container className={cla.cont}>
         <Grid container className={cla.falign} spacing={2} direction="row" alignItems="center" justifyContent='space-between'>
             <Grid item className={cla.imgStylefix}>
                 <Typography component='div'>
@@ -41,35 +45,35 @@ const Header = () => {
             <Grid item className={cla.gridItem}>
                 <Grid container style={{gridGap:'10px'}} direction="row" alignItems="center" justifyContent='center'>
                 <Typography component='nav'>
-                        HOME
+                        <Link to='/' className='link_deco'>HOME</Link>
                 </Typography>
                     
                 <Typography component='nav'>
-                        ROOMS
+                <Link to='/' className='link_deco'>ROOMS</Link>
                 </Typography>
 
                 <Typography component='nav'>
-                        GALLERY
+                        <Link to='/' className='link_deco'>GALLERY</Link>
                 </Typography>
                     
                 <Typography component='nav'>
-                        PACKAGES
+                <Link to='/' className='link_deco'>PACKAGES</Link>
                 </Typography>
 
                 <Typography component='nav'>   
-                      RESTAURANT
+                <Link to='/' className='link_deco'>RESTAURANT</Link>
                 </Typography>
 
                 <Typography component='nav'>   
-                   AMENITIES
+                <Link to='/' className='link_deco'>AMENITIES</Link>
                 </Typography>
                     
                 <Typography component='nav'>   
-                        AROUND US
+                <Link to='/' className='link_deco'>AROUND US</Link>
                 </Typography>
                     
-                <Typography component='nav'>   
-                   <button className={cla.btnstyle}>BOOK NOW</button>
+                    <Typography component='nav'>    
+                   <button className={cla.btnstyle} onClick={()=>setredi(true)}>BOOK NOW</button>
                 </Typography>
                     
                 </Grid>
