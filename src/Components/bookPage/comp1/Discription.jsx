@@ -5,6 +5,8 @@ import SmokeFreeIcon from '@material-ui/icons/SmokeFree';
 function Discription() {
     return (
         <div className={styles.main}>
+            <p className={styles.size}>BOOKING DETAILS</p>
+            <hr />
             <h6 className= {styles.box21}>TWO DOUBLE BEDS</h6>
             <div className= {styles.box2}>
                 <img alt="Reservation" src="/images/dsc05806_optimized_20210809-04455033.jpg" style={{ width: "204px", height: "136px" }} />

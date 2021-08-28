@@ -5,6 +5,7 @@ import Pramotion from '../Components/landing_page/promotion/promotion';
 import Accessibility from '../Components/landing_page/accessibility/accessibility'
 import Home from "../Components/landing_page/home";
 import { RoomsPage } from "../Components/RoomsPage/RoomsPage";
+
 export default function Routing() {
   return (
     <Switch>
@@ -36,7 +37,6 @@ export default function Routing() {
       <Route exact path='/booking'>
         <RoomsPage />
       </Route>
-
 
     </Switch>
   )
