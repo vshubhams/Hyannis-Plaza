@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles,withStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
 import Divider from '@material-ui/core/Divider';
@@ -10,21 +10,21 @@ import { MenuItem } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    
-      margin: theme.spacing(1),
-        //   width: 250,
-      height: '30px'
-    },
-    container: {
-  display: "grid",
-  gridTemplateColumns: "auto auto",
-  gridGap: "25px",
-  // width: "60%",
-  fontWeight: "bold",
-      marginBottom: '10px',
-      marginTop: "20px",
+
+    margin: theme.spacing(1),
+    //   width: 250,
+    height: '30px'
   },
-  
+  container: {
+    display: "grid",
+    gridTemplateColumns: "auto auto",
+    gridGap: "25px",
+    // width: "60%",
+    fontWeight: "bold",
+    marginBottom: '10px',
+    marginTop: "20px",
+  },
+
   padd: {
     paddingLeft: '10px'
   },
@@ -37,29 +37,29 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '10px',
 
   },
- box: {
+  box: {
     marginTop: "20px",
-      marginLeft: "20px",
- }
-  
+    marginLeft: "20px",
+  }
+
 }));
 
 
 
 const ValidationTextField = withStyles({
   root: {
-   
-   
+
+
     '& input:valid + fieldset': {
-        borderLeftWidth: 6,
-        borderColor: 'green',
-        
+      borderLeftWidth: 6,
+      borderColor: 'green',
+
     },
-     '& input:valid:focus + fieldset': {
-        borderLeftWidth: 6,
-        borderColor: 'blue',
+    '& input:valid:focus + fieldset': {
+      borderLeftWidth: 6,
+      borderColor: 'blue',
     },
-    
+
   },
 })(TextField);
 
@@ -77,7 +77,7 @@ const names = [
   'Saudi Arabia',
   'USA',
 ];
-  
+
 
 function GuestDetail() {
   const classes = useStyles();
@@ -107,16 +107,16 @@ function GuestDetail() {
   }
 
 
-  
+
   return (
     <div className={classes.box}>
       <Box className={classes.flex}>
-      <NotificationsIcon />
-      <Typography
-        variant='subtitle2'
-        align='justify'
-        className={classes.padd}
-      >Lowest Price Guaranteed | Book Now Pay At Hotel</Typography>
+        <NotificationsIcon />
+        <Typography
+          variant='subtitle2'
+          align='justify'
+          className={classes.padd}
+        >Lowest Price Guaranteed | Book Now Pay At Hotel</Typography>
       </Box>
       <Divider />
       <Typography
@@ -126,10 +126,10 @@ function GuestDetail() {
       >GUEST DETAILS</Typography>
       <Divider />
 
-      
+
 
       <form className={classes.container} noValidate autoComplete="off" onSubmit={handleSubmit}>
-      <div>
+        <div>
           <ValidationTextField
             label="First Name"
             required
@@ -139,10 +139,10 @@ function GuestDetail() {
             id="outlined1"
             value={firstname}
             onChange={e => setFirstName(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
+          />
+        </div>
+        <div>
+          <ValidationTextField
             label="Last Name"
             required
             fullWidth
@@ -151,10 +151,10 @@ function GuestDetail() {
             id="outlined2"
             value={lastname}
             onChange={e => setLastName(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
+          />
+        </div>
+        <div>
+          <ValidationTextField
             label="Email"
             required
             fullWidth
@@ -164,11 +164,11 @@ function GuestDetail() {
             id="outlined3"
             value={email}
             onChange={e => setEmail(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined4"
+          />
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined4"
             label="Phone"
             required
             fullWidth
@@ -177,11 +177,11 @@ function GuestDetail() {
             type="Number"
             value={phone}
             onChange={e => setPhone(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined5"
+          />
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined5"
             label="Address"
             required
             fullWidth
@@ -189,11 +189,11 @@ function GuestDetail() {
             size="medium"
             value={address}
             onChange={e => setAddress(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined6"
+          />
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined6"
             label="City"
             required
             fullWidth
@@ -201,11 +201,11 @@ function GuestDetail() {
             size="medium"
             value={city}
             onChange={e => setCity(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined7"
+          />
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined7"
             label="State"
             required
             fullWidth
@@ -213,11 +213,11 @@ function GuestDetail() {
             size="medium"
             value={state}
             onChange={e => setState(e.target.value)}
-        />
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined8"
+          />
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined8"
             label="Country"
             required
             fullWidth
@@ -230,13 +230,13 @@ function GuestDetail() {
             {names.map((option, i) => {
               return <MenuItem key={i} value={option} >{option}</MenuItem>
             })}
-           
-            
-        </ValidationTextField>
-      </div>
-      <div>
-        <ValidationTextField
-          id="outlined9"
+
+
+          </ValidationTextField>
+        </div>
+        <div>
+          <ValidationTextField
+            id="outlined9"
             label="ZIP Code"
             required
             fullWidth
@@ -245,11 +245,11 @@ function GuestDetail() {
             type='number'
             value={zipCode}
             onChange={e => setZipCode(e.target.value)}
-        />
-      </div>
+          />
+        </div>
       </form>
-      </div>
-    )
+    </div>
+  )
 }
 
 export default GuestDetail

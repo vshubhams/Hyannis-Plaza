@@ -19,8 +19,8 @@ function App() {
 
   return load ? (
     <div className="App">
-      {/* <Routing/> */}
-      <RoomsPage />
+      <Routing/>
+      {/* <RoomsPage /> */}
       {/* <BookPage /> */}
     </div>
   ):(<Loader className="Loader" type="ThreeDots" color="#3d9991" secondaryColor='red' height={120} width={120} timeout={3000}/>);

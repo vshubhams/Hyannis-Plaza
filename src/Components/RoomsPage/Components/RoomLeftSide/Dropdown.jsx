@@ -6,9 +6,8 @@ import Input from '@material-ui/core/Input';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Filter } from '@material-ui/icons';
 import { getFilterRoom } from '../../../../Redux/rooms/actions';
 
 
