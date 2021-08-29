@@ -4,7 +4,7 @@ import { Button, makeStyles } from '@material-ui/core'
 import React from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
     color: {
@@ -82,9 +82,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Sidebar1() {
+function Sidebar1({room}) {
     const classes = useStyles()
-    const [open,setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(false);
+    const { startDate, endDate, roomCount, nights} = useSelector(state => state.app.bookingDetails);
     
 
     const handleChange = (e) => {
@@ -101,20 +102,20 @@ function Sidebar1() {
             <div className={classes.flex}>
                 <div className={classes.pad}>
                     <p className={classes.bold}>Check In</p>
-                    <p>8/27/2021</p>
+                    <p>{startDate}</p>
                 </div>
 
                 <div className={classes.pad}>
                     <p className={classes.bold}>Check Out</p>
-                    <p>8/28/2021</p>
+                    <p>{endDate}</p>
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Room(s) <br/> 1</p>
+                    <p className={classes.bold}>Number<br /> of Room(s) <br/> {roomCount}</p>
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Nights <br/> 1 </p>
+                    <p className={classes.bold}>Number<br /> of Nights <br/> {nights} </p>
                 </div>
             </div>
 
@@ -126,7 +127,7 @@ function Sidebar1() {
           
             <Divider />
             <div>
-                <div onClick={handleChange} variant='filled' className={classes.btn2}>TWO DOUBLE BEDS <span>{open?<ExpandLessIcon/>: <ExpandMoreIcon/>}</span></div>
+                <div onClick={handleChange} variant='filled' className={classes.btn2}>{room.title}<span>{open?<ExpandLessIcon/>: <ExpandMoreIcon/>}</span></div>
                 {/* <div className={classes.width}>
                     <hr />
                 </div> */}
@@ -138,13 +139,7 @@ function Sidebar1() {
                     <p >Iron</p>
                     <p >Air Conditioner</p>
                     <p className={classes.bld}>Room Description</p>
-                    <p className={classes.rtpad}>Two Double Beds : Featuring a flat-screen cable TV,
-                        free high-speed Wi-Fi,
-                        a small refrigerator,
-                        electronic safe, iron and board,
-                        and coffee table + machine.
-                        Guests are also provided with a stand up shower bathroom with a hairdryer.
-                    </p>
+                    <p className={classes.rtpad}>{room.longDesc }</p>
 
 
 

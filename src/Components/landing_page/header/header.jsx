@@ -1,6 +1,7 @@
 import { Container, makeStyles,Grid, Typography } from '@material-ui/core';
 import { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import "./header.css";
 
 const useStyles = makeStyles((theme) => ({
     cont: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     imgStylefix: {
-        width:'20%'
+        width:'16%'
     },
 
     gridItem: {
@@ -57,7 +58,7 @@ const Header = () => {
                 </Typography>
                     
                 <Typography component='nav'>
-                <Link to='/' className='link_deco'>PACKAGES</Link>
+                <Link to='/packages' className='link_deco'>PACKAGES</Link>
                 </Typography>
 
                 <Typography component='nav'>   

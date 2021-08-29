@@ -335,33 +335,11 @@
       "id": 12
     },
     {
-      "CardNumber": "4554545454545455",
-      "CardExpiryDate": "2222",
-      "CardCVC": "555",
-      "fName": "asadc",
-      "lName": "aeca",
-      "email": "acdef",
-      "phone": "56465465",
-      "address": "acfafa",
-      "city": "advad",
-      "State": "sdgrsd",
-      "ZipCode": "455",
-      "CardName": "dsdvsgv",
+      "CardNumber": "4545454545454554",
+      "CardName": "Shubham",
+      "CardExpiryDate": "0221",
+      "CardCVC": "677",
       "id": 13
-    },
-    {
-      "CardNumber": "655654",
-      "CardName": "551",
-      "CardExpiryDate": "6515",
-      "CardCVC": "651",
-      "id": 14
-    },
-    {
-      "CardNumber": "4152645896256945",
-      "CardName": "aksh",
-      "CardExpiryDate": "04/23",
-      "CardCVC": "",
-      "id": 15
     }
   ]
 }
