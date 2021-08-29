@@ -71,12 +71,12 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                 />
                 <TextField
                     label="CVC"
-                    // name='cvc'
+                    name='cvc'
                     required
                     fullWidth
                     variant="filled"
                     size="small"
-                    name="CardCVC"
+                    // name="CardCVC"
                     onChange={e => { confirmBook(e.target);setCvc(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />

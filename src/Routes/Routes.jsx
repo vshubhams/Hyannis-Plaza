@@ -6,6 +6,7 @@ import Accessibility from '../Components/landing_page/accessibility/accessibilit
 import Home from "../Components/landing_page/home";
 import { RoomsPage } from "../Components/RoomsPage/RoomsPage";
 import BookPage from "../Components/bookPage/BookPage";
+import Package from "../Components/Packages/Package"
 
 export default function Routing() {
   return (
@@ -37,6 +38,9 @@ export default function Routing() {
 
       <Route path='/rooms'>
         <RoomsPage />
+      </Route>
+      <Route path='/packages'>
+        <Package/>
       </Route>
 
       <Route path='/book/:id'>

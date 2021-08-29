@@ -68,7 +68,7 @@ function BookPage() {
             <Header />
             <div className={styles.main}>
                 <div>
-                    <Sidebar1 />
+                    <Sidebar1 room={room} />
                 </div>
                 <div>
                     <Description room={room} />

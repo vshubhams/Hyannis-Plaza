@@ -91,6 +91,7 @@ function GuestDetail({confirmBook}) {
           <ValidationTextField
             label="First Name"
             required
+            defaultValue="Shubham"
             fullWidth
             variant="filled"
             size="small"
@@ -102,6 +103,7 @@ function GuestDetail({confirmBook}) {
           <ValidationTextField
             label="Last Name"
             required
+            defaultValue="Verma"
             fullWidth
             variant="filled"
             size="small"
@@ -114,6 +116,7 @@ function GuestDetail({confirmBook}) {
             label="Email"
             required
             fullWidth
+            defaultValue="shubham@masaischool.com"
             variant="filled"
             size="small"
             type="email"
@@ -126,6 +129,7 @@ function GuestDetail({confirmBook}) {
             label="Phone"
             required
             fullWidth
+            defaultValue="8954686319"
             variant="filled"
             size="small"
             type="Number"
@@ -138,6 +142,7 @@ function GuestDetail({confirmBook}) {
             label="Address"
             required
             fullWidth
+            defaultValue="Baraut"
             variant="filled"
             size="small"
             name="address"
@@ -148,6 +153,7 @@ function GuestDetail({confirmBook}) {
           <ValidationTextField
             label="City"
             required
+            defaultValue="Baghpat"
             fullWidth
             variant="filled"
             size="small"
@@ -160,6 +166,7 @@ function GuestDetail({confirmBook}) {
             label="State"
             required
             fullWidth
+            defaultValue="Uttar Pradsesh"
             variant="filled"
             size="small"
             name="State"
@@ -189,6 +196,7 @@ function GuestDetail({confirmBook}) {
           <ValidationTextField
             label="ZIP Code"
             required
+            defaultValue="250619"
             fullWidth
             variant="filled"
             size="small"
