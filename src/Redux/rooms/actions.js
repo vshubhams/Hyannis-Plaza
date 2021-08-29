@@ -4,7 +4,8 @@ import {
       GET_ROOMS_REQUEST,
       GET_ROOMS_SUCCESS,
       SET_ISOPEN,
-    GET_FILTER_ROOM} from "./actionTypes";
+    GET_FILTER_ROOM,
+    Get_BOOKING_DETAILS} from "./actionTypes";
 
 export const getRoomsRequest =()=>{
     return{
@@ -41,12 +42,15 @@ export const setIsOpen = (payload) => {
         payload:payload
     }
 }
+export const getBookingDetails = (payload) => {
+    return {
+        type: Get_BOOKING_DETAILS,
+        payload:payload
+    }
+}
 
 
 export const getFilterRoom = (payload) => {
-
-// console.log(payload)
-
     return {
         type: GET_FILTER_ROOM,
         payload

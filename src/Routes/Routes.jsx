@@ -17,29 +17,29 @@ export default function Routing() {
 
       </Route>
 
-      <Route exact path='/policies'>
+      <Route path='/policies'>
         <Home>
           <Policies />
         </Home>
       </Route>
 
-      <Route exact path='/promotions'>
+      <Route path='/promotions'>
         <Home>
           <Pramotion />
         </Home>
       </Route>
 
-      <Route exact path='/accessibility'>
+      <Route path='/accessibility'>
         <Home>
         <Accessibility />
         </Home>
       </Route>
 
-      <Route exact path='/rooms'>
+      <Route path='/rooms'>
         <RoomsPage />
       </Route>
 
-      <Route exact path='/book/:id'>
+      <Route path='/book/:id'>
         <BookPage />
       </Route>
 

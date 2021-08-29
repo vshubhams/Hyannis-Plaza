@@ -16,16 +16,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const DatePicker = ({ label, id}) => {
+const DatePicker = ({ label, id,handleDate,currentDate}) => {
   const classes = useStyles();
-
-  var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
-
-  today = yyyy + "-" + mm + "-" + dd;
-  console.log(today);
 
   return (
     <div>
@@ -34,7 +26,8 @@ const DatePicker = ({ label, id}) => {
           id={id}
           label={label}
           type="date"
-          defaultValue={today}
+          onChange={(e)=>{handleDate(e.target.value,id)}}
+          defaultValue={currentDate}
           className={classes.textField}
           InputLabelProps={{
             shrink: true,

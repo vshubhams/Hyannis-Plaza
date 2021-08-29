@@ -3,34 +3,39 @@ import Brightness2Icon from '@material-ui/icons/Brightness2';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import HotelIcon from '@material-ui/icons/Hotel';
 import WcIcon from '@material-ui/icons/Wc';
+import { useSelector } from "react-redux";
 
 export const DetailTags = () => {
+    const { startDate, endDate, roomCount, adultCount,nights } = useSelector(state => state.app.bookingDetails);
+
+
+    
     return (
         <div className={styles.container}>
             <div>
                 <DateRangeIcon />
                 Check in
-                <span>08/28/2021</span>
+                <span>{startDate }</span>
             </div>
             <div>
                 <DateRangeIcon />
                 Check in
-                <span>08/28/2021</span>
+                <span>{endDate} </span>
             </div>
             <div className={styles.moonIcon}>
                 <Brightness2Icon />
                 Night(s)
-                <span>1</span>
+                <span>{nights}</span>
             </div>
             <div>
                 <HotelIcon />
                 Room(s)
-                <span>1</span>
+                <span>{roomCount}</span>
             </div>
             <div>
                 <WcIcon />
                  Adult
-                <span>1</span>
+                <span>{adultCount}</span>
             </div>
         </div>
     )

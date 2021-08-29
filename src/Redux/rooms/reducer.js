@@ -3,7 +3,8 @@ import {
     GET_ROOMS_SUCCESS,
     GET_ROOMS_FAILURE,
     SET_ISOPEN,
-    GET_FILTER_ROOM
+    GET_FILTER_ROOM,
+    Get_BOOKING_DETAILS
 } from "./actionTypes"
 
 const initState ={
@@ -11,7 +12,8 @@ const initState ={
     isLoading:false,
     isError: false,
     modal: { isOpen: false, id: "" },
-    filterRoom:[]
+    filterRoom: [],
+    bookingDetails:{}
 };
 
 const roomsReducer = (state = initState, {type,payload})=>{
@@ -39,11 +41,16 @@ const roomsReducer = (state = initState, {type,payload})=>{
                 ...state,
                 modal: {id:payload.id,isOpen:payload.isOpen}
             }
-            case GET_FILTER_ROOM:
-                return {
-                    ...state,
-                    filterRoom: payload
-                }
+        case Get_BOOKING_DETAILS:
+            return {
+                ...state,
+                bookingDetails:payload
+            }
+        case GET_FILTER_ROOM:
+            return {
+                ...state,
+                filterRoom: payload
+            }
         default:
             return state;
     }

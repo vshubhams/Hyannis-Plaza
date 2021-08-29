@@ -19,6 +19,9 @@
     width: 20px;
     margin-right: 4px;
 }
+.container>div>span{
+    margin-left: 4px;
+}
 .moonIcon>svg{
     transform: scaleX(-1);
 }

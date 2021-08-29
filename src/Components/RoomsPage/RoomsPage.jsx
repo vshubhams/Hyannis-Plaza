@@ -17,8 +17,6 @@ export const RoomsPage = () => {
         roomArr.push(found[0]);
     });
 
-    window.scrollTo(0,0)
-
     // console.log(filterRoom);
     const dispatch = useDispatch();
 

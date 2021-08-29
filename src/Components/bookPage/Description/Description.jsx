@@ -2,8 +2,9 @@ import React from 'react';
 import styles from './Description.module.css'
 import SmokeFreeIcon from '@material-ui/icons/SmokeFree';
 import CircleNotificationsIcon from '@material-ui/icons/CircleNotifications';
+import { useSelector } from 'react-redux';
 function Description({ room }) {
-
+    const { startDate, endDate, roomCount, adultCount} = useSelector(state => state.app.bookingDetails);
     return (
         <div className={styles.wrapper}>
             <h3>BOOKING DETAILS</h3>
@@ -21,16 +22,16 @@ function Description({ room }) {
                             </div>
                             <div>
                                 <h6>CHECK-IN-OUT:</h6>
-                                <p><span>8/28/2021</span> to <span>8/29/2021</span></p>
+                                <p><span>{startDate}</span> to <span>{endDate} </span></p>
                             </div>
                             <div className={styles.boxes}>
                                 <div>
                                     <h4>ROOM</h4>
-                                    <p>1</p>
+                                    <p>{roomCount}</p>
                                 </div>
                                 <div>
                                     <h4>ADULT</h4>
-                                    <p>1</p>
+                                    <p>{adultCount}</p>
                                 </div>
                             </div>
                         </div>

@@ -2,37 +2,91 @@ import React from "react";
 import DatePicker from "./DatePicker";
 import {Dropdown1, Dropdown2} from "./Dropdown";
 import styles from "./RoomsLeftSide.module.css";
+import { useState, useEffect } from "react";
+import { getBookingDetails } from "../../../../Redux/rooms/actions";
+import { useDispatch } from "react-redux";
 const RoomsLeftSide = () => {
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [roomCount, setRoomCount] = useState(1);
+  const [adultCount, setAdultCount] = useState(1);
+  const [childCount, setChildCount] = useState(1);
+
+  const today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  const yyyy = today.getFullYear();
+  const currentDate = yyyy + "-" + mm + "-" + dd;
+
+  useEffect(() => {
+    setStartDate(currentDate);
+    setEndDate(currentDate);
+  },[currentDate])
+
+
+  const dispatch = useDispatch();
+  
+  const handleDate = (value,id) => {
+    if (id === "date1") {
+      setStartDate(value);
+    }
+    else if (id === "date2") {
+      setEndDate(value);
+    }
+  }
+  const countDay = () => {
+    const oneDay = 1000 * 60 * 60 * 24;
+    const firstDate = new Date(startDate);
+    const seconddate = new Date(endDate);
+    const difference = Math.abs(firstDate - seconddate);
+    const day = Math.round(difference / oneDay);
+    return day;
+  }
+  const nights = countDay();
+
+  useEffect(() => {
+    const payload = {
+      startDate,
+      endDate,
+      roomCount,
+      adultCount,
+      childCount,
+      nights
+    }
+    const bookingDetailsAction = getBookingDetails(payload);
+    dispatch(bookingDetailsAction);
+  }, [startDate, endDate, roomCount, adultCount, childCount,nights,dispatch]);
+
   return (
     <>
       <div className={styles.cont}>
         <div className={styles.leftSide}>
           <h2 className={styles.heading1}>Your Stay</h2>
-          <DatePicker label="Check-In" id="date1"/>       
-            <DatePicker label="Check-Out" id="date2"/>
+          <DatePicker handleDate={handleDate} currentDate={currentDate} label="Check-In" id="date1"/>       
+            <DatePicker handleDate={handleDate} currentDate={currentDate} label="Check-Out" id="date2"/>
             <div className={styles.formGrp}>
               <div className={styles.inputGrp}>
                 <label htmlFor="checkIn" className={styles.checkInLabel}>
                   Number of Rooms
                 </label>
                 <div className={styles.datePickCont}>
-                  <select id={styles.checkIn}>
-                    <option value="1">
+                  <select value={roomCount} onChange={(e)=>{setRoomCount(Number(e.target.value))}} id={styles.checkIn}>
+                    <option value={1}>
                       1
                     </option>
-                    <option value="2">
+                    <option value={2}>
                       2
                     </option>
-                    <option value="3">
+                    <option value={3}>
                       3
                     </option>
-                    <option value="4">
+                    <option value={4}>
                       4
                     </option>
-                    <option value="5">
+                    <option value={5}>
                       5
                     </option>
-                    <option value="6">
+                    <option value={6}>
                       6
                     </option>
                   </select>
@@ -42,7 +96,8 @@ const RoomsLeftSide = () => {
             </div>
             <div className={styles.addIt}>
               <h2>Room 1</h2>
-              <svg
+            <svg
+                onClick={()=>{setRoomCount(prev=>prev+1)}}
                 className={styles.addIcon}
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -58,23 +113,23 @@ const RoomsLeftSide = () => {
               <div className={styles.peoples}>
                 <label>Adults (21+)</label>
                 <div>
-                  <select className={styles.peoples_Sel_1}>
-                    <option value="1">
+                  <select onChange={(e)=>{setAdultCount(e.target.value)}} className={styles.peoples_Sel_1}>
+                    <option value={1}>
                       1
                     </option>
-                    <option value="2">
+                    <option value={2}>
                       2
                     </option>
-                    <option value="3">
+                    <option value={3}>
                       3
                     </option>
-                    <option value="4">
+                    <option value={4}>
                       4
                     </option>
-                    <option value="5">
+                    <option value={5}>
                       5
                     </option>
-                    <option value="6">
+                    <option value={6}>
                       6
                     </option>
                   </select>
@@ -83,23 +138,23 @@ const RoomsLeftSide = () => {
               <div className={styles.peoples}>
                 <label>Child (0-10)</label>
                 <div>
-                  <select className={styles.peoples_Sel_1}>
-                    <option value="1">
+                  <select onChange={(e)=>{setChildCount(e.target.value)}} className={styles.peoples_Sel_1}>
+                    <option value={1}>
                       1
                     </option>
-                    <option value="2">
+                    <option value={2}>
                       2
                     </option>
-                    <option value="3">
+                    <option value={3}>
                       3
                     </option>
-                    <option value="4">
+                    <option value={4}>
                       4
                     </option>
-                    <option value="5">
+                    <option value={5}>
                       5
                     </option>
-                    <option value="6">
+                    <option value={6}>
                       6
                     </option>
                   </select>

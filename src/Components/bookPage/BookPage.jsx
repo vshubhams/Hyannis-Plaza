@@ -29,7 +29,7 @@ function BookPage() {
             })
     }, [id]);
 
-    console.log('room:', room)
+    // console.log('room:', room)
     return (
         <div>
             <Header />
