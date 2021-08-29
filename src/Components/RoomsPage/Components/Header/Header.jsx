@@ -9,7 +9,7 @@ export const Header = () => {
     return redi?<Redirect to='/'/>:(
         <div className={styles.container}>
             <div className={styles.left} onClick={()=>setredi(true)}>
-                <img src="./hyannis-logo.png" alt="" />
+                <img src="/hyannis-logo.png" alt="" />
                 <p>Hyannis Plaza Hotel, Hyannis</p>
             </div>
             <div className={styles.right}>
@@ -28,7 +28,7 @@ export const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="./en.png" alt="" />
+                    <img src="/en.png" alt="" />
                 </div>
             </div>
         </div>
