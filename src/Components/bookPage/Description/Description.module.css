@@ -1,0 +1,175 @@
+
+.wrapper{
+    padding: 10px 20px 20px;
+}
+.wrapper>h3{
+    margin-top: 0;
+    margin-bottom: 13px;
+    color: #555555;
+    font-weight: 400;
+    font-size: 25px;
+    border-bottom: dotted 1px #777777;
+}
+.main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.imgBox>img{
+    width: 100%;
+}
+.container>h5{
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    padding: 0 20px;
+}
+
+.left>div{
+   display: flex;
+   align-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.left>div span{
+    font-weight: 600;
+}
+.left>div>h6{
+    font-size: 14px;
+    margin: 0;
+    color: #555555;
+    margin-right: 20px;
+}
+.left>div>p{
+    margin: 0;
+    font-size: 14px;
+}
+.boxes{
+    color: #777777;  
+    text-align: center;
+}
+.boxes>div{
+    background-color: #F5F5F5;
+    padding: 0 10px;
+    margin-right: 2px;
+}
+.boxes>div>h4{
+ font-size: 14px; 
+}
+.boxes>div>p{
+    margin: 0;
+}
+
+.smoke{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.smoke>h4{
+    color: #C50303;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.smoke>svg{
+    fill: #C50303;
+    width: 22px;
+    margin-right: 5px;
+}
+
+.promotion>h6{
+    font-size: 14px;
+    margin: 0;
+    color: #555555;
+    margin-right: 20px;   
+}
+.promotion>p{
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+.priceTable{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.priceTable>div{
+    display: grid;
+    grid-template-columns: 55% 15% 15% 15%;
+    justify-content: flex-end;
+}
+.firstRow{
+    background-image: linear-gradient(to right, #FFF , #F5F5F5);
+}
+.priceTable>div>h6{
+    margin: 0;
+    padding: 8px;
+    text-align: right;
+    color: #444444;
+    text-transform: uppercase;
+}
+.priceTable>div>h6>span{
+    font-size: 12px;
+    text-transform: none;
+}
+.totalPrice{
+    background-color: #E5E5E5;
+}
+.totalValue{
+    background-color: #F5F5F5;
+}
+
+.tax{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 50%;
+}
+.tax>div{
+    font-size: 12px;
+    border-bottom: solid 1px #cccccc;
+}
+.tax>p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+.tax>p>span{
+    font-size: 11px;
+}
+.grandTotal{
+    text-align: right;
+    background-image: linear-gradient(to right, #FFF , #E4E5E6);
+}
+.grandTotal>h3{
+    color: #008BE6;
+    font-size: 24px;
+    padding: 20px 8px 8px;
+}
+.grandTotal>h3>span{
+    color: #F34938;
+    font-size: 20px;
+}
+
+
+.tag{
+    display: flex;
+    background-color: #FFE8E8;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 6px 5px;
+    border-radius: 7px;
+    color: #b92424;
+    font-size: 16px;
+}
+.tag>p{
+    margin-bottom: 0;
+}
+.tag>svg{
+    margin-right: 10px;
+    color: #FF0000;
+}

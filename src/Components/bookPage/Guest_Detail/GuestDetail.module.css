@@ -1,0 +1,11 @@
+.wrapper{
+    padding: 10px 20px 20px;
+}
+.wrapper>h3{
+    margin-top: 0;
+    margin-bottom: 13px;
+    color: #555555;
+    font-weight: 400;
+    font-size: 25px;
+    border-bottom: dotted 1px #777777;
+}

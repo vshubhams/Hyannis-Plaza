@@ -9,10 +9,12 @@ import GroupsIcon from '@material-ui/icons/Groups';
 import CircleNotificationsIcon from '@material-ui/icons/CircleNotifications';
 import { useDispatch } from 'react-redux';
 import { setIsOpen } from '../../../../Redux/rooms/actions';
+import { useHistory } from 'react-router-dom';
 
 export const RoomItem = ({ items }) => {
 
     const dispatch = useDispatch();
+    const history = useHistory();
     
     
     // console.log(items)
@@ -65,7 +67,7 @@ export const RoomItem = ({ items }) => {
                     <p>Total rate excluding tax</p>
                     <h3>$ {strikePrice}</h3>
                     <h1>$ {price}</h1>
-                    <button>BOOK NOW</button>
+                    <button onClick={() => { history.push(`/book/${id}`)}}>BOOK NOW</button>
                 </div>
             </div>
             <div className={styles.freebies}>

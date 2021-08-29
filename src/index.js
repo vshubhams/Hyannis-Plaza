@@ -7,13 +7,31 @@ import { Provider } from "react-redux";
 import { store } from './Redux/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router } from "react-router-dom";
+
+import { createTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#541202",
+    },
+    secondary: {
+      main: blue[500],
+    },
+  },
+});
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-       <Provider store={store}>
-         <App />
+      <Provider store={store}>
+        <MuiThemeProvider theme={theme}>
+          <App />
+        </MuiThemeProvider>
       </Provider>
-      </Router>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -51,7 +51,7 @@ export default function Main() {
 </div>
 
 <div className="footerStrip">
-    <p>** <Link to='/booking'> GUARANTEED BEST RATE WHEN YOU BOOK WITH US DIRECTLY </Link> **</p>
+    <p>** <Link to='/rooms'> GUARANTEED BEST RATE WHEN YOU BOOK WITH US DIRECTLY </Link> **</p>
         </div>
     </div>)
 }

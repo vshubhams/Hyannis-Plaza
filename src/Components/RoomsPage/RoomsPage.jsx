@@ -7,18 +7,17 @@ import { getRooms } from "../../Redux/rooms/actions"
 import { DetailTags } from "./Components/DetailTags/DetailTags"
 import RoomsLeftSide from "./Components/RoomLeftSide/RoomsLeftSide"
 import Modal from "./Components/Modal/Modal"
-
 export const RoomsPage = () => {
     const rooms = useSelector((state) => state.app.rooms);
     const filterRoom = useSelector((state) => state.app.filterRoom)
     const roomArr = [];
-filterRoom.forEach(element => {
-    console.log("element" ,element);
+    filterRoom.forEach(element => {
+        console.log("element", element);
         const found = rooms.filter(el => el.title === element)
         roomArr.push(found[0]);
     });
-    console.log(roomArr);
-    
+
+    window.scrollTo(0,0)
 
     // console.log(filterRoom);
     const dispatch = useDispatch();
@@ -29,7 +28,7 @@ filterRoom.forEach(element => {
     }, [dispatch]);
 
 
-    
+
 
     return (
         <div className={styles.container}>
@@ -43,7 +42,7 @@ filterRoom.forEach(element => {
                         <RoomItem key={el.id} items={el} />
                     )) : roomArr.map((el) => (
                         <RoomItem key={el.id} items={el} />
-                        ))}
+                    ))}
                 </div>
             </div>
             <Modal />
