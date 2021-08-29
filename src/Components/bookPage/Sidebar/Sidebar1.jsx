@@ -105,13 +105,11 @@ function Sidebar1() {
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Room(s)</p>
-                    <p>1</p>
+                    <p className={classes.bold}>Number<br /> of Room(s) <br/> 1</p>
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Nights</p>
-                    <p>1</p>
+                    <p className={classes.bold}>Number<br /> of Nights <br/> 1 </p>
                 </div>
             </div>
 
