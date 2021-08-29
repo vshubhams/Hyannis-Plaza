@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "20px",
     }
 }));
-export const PaymentDetails = () => {
+export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
     const classes = useStyles();
     const [number, setNumber] = useState('')
     const [name, setName] = useState('')
@@ -43,8 +43,8 @@ export const PaymentDetails = () => {
                     fullWidth
                     variant="filled"
                     size="small"
-                    value={number}
-                    onChange={(e) => { setNumber(e.target.value) }}
+                    name="CardNumber"
+                    onChange={e => { confirmBook(e.target);setNumber(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />
                 <TextField
@@ -54,8 +54,8 @@ export const PaymentDetails = () => {
                     fullWidth
                     variant="filled"
                     size="small"
-                    value={name}
-                    onChange={(e) => { setName(e.target.value) }}
+                    name="CardName"
+                    onChange={e => { confirmBook(e.target);setName(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />
                 <TextField
@@ -65,8 +65,8 @@ export const PaymentDetails = () => {
                     fullWidth
                     variant="filled"
                     size="small"
-                    value={expiry}
-                    onChange={(e) => { setExpiry(e.target.value) }}
+                    name="CardExpiryDate"
+                    onChange={e => { confirmBook(e.target);setExpiry(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />
                 <TextField
@@ -76,8 +76,8 @@ export const PaymentDetails = () => {
                     fullWidth
                     variant="filled"
                     size="small"
-                    value={cvc}
-                    onChange={(e) => { setCvc(e.target.value) }}
+                    name="CardCVC"
+                    onChange={e => { confirmBook(e.target);setCvc(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />
             </form>
@@ -86,7 +86,7 @@ export const PaymentDetails = () => {
                 <div>I AGREE TO THE TERMS AND CONDITIONS</div>
             </div>
             <div className={styles.confirm}>
-            <button disabled={permission?"":"disabled"} >CONFIRM BOOKING</button>
+            <button disabled={permission?"":"disabled"} onClick={()=> handleSubmitBook() }>CONFIRM BOOKING</button>
             </div>
         </div>
     )

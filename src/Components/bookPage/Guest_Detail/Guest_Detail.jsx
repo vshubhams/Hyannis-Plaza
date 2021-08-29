@@ -75,31 +75,10 @@ const names = [
 ];
 
 
-function GuestDetail() {
+function GuestDetail({confirmBook}) {
   const classes = useStyles();
-  const [firstname, setFirstName] = React.useState('');
-  const [lastname, setLastName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [phone, setPhone] = React.useState();
-  const [address, setAddress] = React.useState('');
-  const [city, setCity] = React.useState('');
-  const [state, setState] = React.useState('');
-  const [country, setCountry] = React.useState('');
-  const [zipCode, setZipCode] = React.useState();
-
   const handleSubmit = () => {
-    const payload = {
-      firstname,
-      lastname,
-      email,
-      phone,
-      address,
-      city,
-      state,
-      country,
-      zipCode
-    }
-    console.log(payload)
+    
   }
 
 
@@ -115,8 +94,8 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
-            value={firstname}
-            onChange={e => setFirstName(e.target.value)}
+            name="fName"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -126,8 +105,8 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
-            value={lastname}
-            onChange={e => setLastName(e.target.value)}
+            name="lName"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -138,8 +117,8 @@ function GuestDetail() {
             variant="filled"
             size="small"
             type="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
+            name="email"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -150,8 +129,8 @@ function GuestDetail() {
             variant="filled"
             size="small"
             type="Number"
-            value={phone}
-            onChange={e => setPhone(e.target.value)}
+            name="phone"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -161,8 +140,8 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
-            value={address}
-            onChange={e => setAddress(e.target.value)}
+            name="address"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -172,8 +151,8 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
-            value={city}
-            onChange={e => setCity(e.target.value)}
+            name="city"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -183,8 +162,8 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
-            value={state}
-            onChange={e => setState(e.target.value)}
+            name="State"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
         <div>
@@ -194,9 +173,10 @@ function GuestDetail() {
             fullWidth
             variant="filled"
             size="small"
+            defaultValue = "India"
             select
-            onChange={e => setCountry(e.target.value)}
-            value={country}
+            onChange={e =>  confirmBook(e.target)}
+            name="Country"
           >
             {names.map((option, i) => {
               return <MenuItem key={i} value={option} >{option}</MenuItem>
@@ -213,8 +193,8 @@ function GuestDetail() {
             variant="filled"
             size="small"
             type='number'
-            value={zipCode}
-            onChange={e => setZipCode(e.target.value)}
+            name="ZipCode"
+            onChange={e => confirmBook(e.target)}
           />
         </div>
       </form>

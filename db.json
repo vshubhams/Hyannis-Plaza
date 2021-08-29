@@ -1,7 +1,7 @@
 {
   "rooms": [
     {
-      "id":"two-double-bed", 
+      "id": "two-double-bed",
       "title": "Two Double Beds",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/33638/dsc05806_optimized_20210809-04455033.jpg",
       "ratetype": "Best Available Rate",
@@ -23,9 +23,9 @@
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/33638/dsc05806_optimized_20210809-04455033.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/33638/dsc05806_optimized_20210809-04455033.jpg",
       "longDesc": "Two Double Beds : Featuring a flat-screen cable TV, free high-speed Wi-Fi, a small refrigerator, electronic safe, iron and board, and coffee table + machine. Guests are also provided with a stand up shower bathroom with a hairdryer."
-  },
-  {
-      "id":"regency-suite", 
+    },
+    {
+      "id": "regency-suite",
       "title": "Regency Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/93258/dsc05768_optimized_20210809-04351360.jpg",
       "ratetype": "Best Available Rate",
@@ -47,9 +47,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/93258/dsc05768_optimized_20210809-04351086.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/93258/dsc05768_optimized_20210809-04351169.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/93258/dsc05768_optimized_20210809-04351255.jpg"
-  },
-  {
-      "id":"king-bed", 
+    },
+    {
+      "id": "king-bed",
       "title": "King Bed",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/52470/dsc05794_optimized_20210809-04340280.jpg",
       "ratetype": "Best Available Rate",
@@ -71,9 +71,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/52470/dsc05794_optimized_20210809-04340363.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/52470/dsc05794_optimized_20210809-04340447.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/52470/dsc05794_optimized_20210809-04340524.jpg"
-  },
-  {
-      "id":"crown-victorian", 
+    },
+    {
+      "id": "crown-victorian",
       "title": "Crown Victorian",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/71814/dsc05757_optimized_20210809-04374653.jpg",
       "ratetype": "Best Available Rate",
@@ -95,9 +95,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/71814/dsc05757_optimized_20210809-04374819.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/71814/dsc05757_optimized_20210809-04374900.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/71814/dsc05757_optimized_20210809-04374984.jpg"
-  },
-  {
-      "id":"plaza-suite", 
+    },
+    {
+      "id": "plaza-suite",
       "title": "Plaza Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/20772/dsc06050_optimized_20210809-04320277.jpg",
       "ratetype": "Best Available Rate",
@@ -119,9 +119,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/20772/dsc06050_optimized_20210809-04320452.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/20772/dsc06050_optimized_20210809-04320535.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/20772/dsc06050_optimized_20210809-04320621.jpg"
-  },
-  {
-      "id":"royal-victorian-suite", 
+    },
+    {
+      "id": "royal-victorian-suite",
       "title": "Royal Victorian Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/75363/dsc05824_optimized-min_20210809-04480803.jpg",
       "ratetype": "Best Available Rate",
@@ -143,9 +143,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/75363/dsc05824_optimized-min_20210809-04481106.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/75363/dsc05824_optimized-min_20210809-04481236.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/75363/dsc05824_optimized-min_20210809-04481406.jpg"
-  },
-  {
-      "id":"family-suite", 
+    },
+    {
+      "id": "family-suite",
       "title": "Family Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/14049/dsc05847_optimized_20210809-04390236.jpg",
       "ratetype": "Best Available Rate",
@@ -167,9 +167,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/14049/dsc05847_optimized_20210809-04390236.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/14049/dsc05847_optimized_20210809-04390319.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/14049/dsc05847_optimized_20210809-04390155.jpg"
-  },
-  {
-      "id":"princess-junior-suite", 
+    },
+    {
+      "id": "princess-junior-suite",
       "title": "Princess Junior Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/35146/dsc05809_optimized_20210809-04284007.jpg",
       "ratetype": "Best Available Rate",
@@ -191,9 +191,9 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/35146/dsc05809_optimized_20210809-04284007.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/35146/dsc05809_optimized_20210809-04284088.jpg",
       "img5": ""
-  },
-  {
-      "id":"princess-suite", 
+    },
+    {
+      "id": "princess-suite",
       "title": "Princess Suite",
       "image": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/18878/dsc06073_optimized_20210809-04270949.jpg",
       "ratetype": "Best Available Rate",
@@ -215,8 +215,147 @@
       "img3": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/18878/dsc06073_optimized_20210809-04271121.jpg",
       "img4": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/18878/dsc06073_optimized_20210809-04271204.jpg",
       "img5": "https://reservation.asiwebres.com/UploadImages/HotelImages/98232/18878/dsc06073_optimized_20210809-04271285.jpg"
-  }
+    }
   ],
-
-  "confirm_book":[]
+  "confirm_book": [
+    {
+      "fName": "fd",
+      "lName": "fd",
+      "email": "fdf",
+      "phone": "23",
+      "address": "ed",
+      "city": "fd",
+      "State": "fd",
+      "Country": "germany",
+      "ZipCode": "231",
+      "CardNumber": "1233656556565666",
+      "CardName": "ty",
+      "CardExpiryDate": "34/34",
+      "CardCVC": "123",
+      "roomDetails": {
+        "tax": 36.12,
+        "fee": 8.5
+      },
+      "id": 1
+    },
+    {
+      "fName": "hghg",
+      "lName": "gh",
+      "email": "hg",
+      "phone": "6767",
+      "address": "766",
+      "city": "677",
+      "State": "67",
+      "Country": "China",
+      "ZipCode": "456345",
+      "CardNumber": "5444554545555544",
+      "CardName": "ghghhgh",
+      "CardExpiryDate": "12/45",
+      "CardCVC": "123",
+      "id": 2
+    },
+    {
+      "fName": "hghg",
+      "lName": "gh",
+      "email": "hg",
+      "phone": "6767",
+      "address": "766",
+      "city": "677",
+      "State": "67",
+      "Country": "China",
+      "ZipCode": "456345",
+      "CardNumber": "5444554545555544",
+      "CardName": "ghghhgh",
+      "CardExpiryDate": "12/45",
+      "CardCVC": "123",
+      "roomDetails": {
+        "id": "4e0100d3-0840-41e0-998f-73656fb89af8",
+        "title": "Two Double Beds",
+        "price": 109.99,
+        "tax": 36.12,
+        "fee": 8.5,
+        "shortDes": "Two Double Beds : Featuring a flat-screen cable TV, free high-speed Wi-Fi, a small refrigerator, electronic safe, iron and board, and coffee table + machine. Guests are also provided with a stand up shower bathroom..."
+      },
+      "id": 3
+    },
+    {
+      "fName": "Digvijay",
+      "lName": "Singh",
+      "email": "dig30786@gmail.com",
+      "phone": "8860789417",
+      "address": "dayara",
+      "city": "aligarh",
+      "State": "uttarpradesh",
+      "Country": "China",
+      "ZipCode": "202142",
+      "CardNumber": "5643343456781234",
+      "CardName": "Digvijay",
+      "CardExpiryDate": "1256",
+      "CardCVC": "123",
+      "id": 4
+    },
+    {
+      "fName": "Digvijay",
+      "lName": "Singh",
+      "email": "dig30786@gmail.com",
+      "phone": "8860789417",
+      "address": "dayara",
+      "city": "aligarh",
+      "State": "uttarpradesh",
+      "Country": "China",
+      "ZipCode": "202142",
+      "CardNumber": "5643343456781234",
+      "CardName": "Digvijay",
+      "CardExpiryDate": "1256",
+      "CardCVC": "123",
+      "roomDetails": {
+        "id": "c798ac06-a096-4ed0-b42a-72968898f45a",
+        "title": "Two Double Beds",
+        "price": 109.99,
+        "tax": 36.12,
+        "fee": 8.5,
+        "shortDes": "Two Double Beds : Featuring a flat-screen cable TV, free high-speed Wi-Fi, a small refrigerator, electronic safe, iron and board, and coffee table + machine. Guests are also provided with a stand up shower bathroom..."
+      },
+      "id": 5
+    },
+    {
+      "fName": "Digvijay",
+      "lName": "Singh",
+      "email": "dig30786@gmail.com",
+      "phone": "8860789417",
+      "address": "dayara",
+      "city": "aligarh",
+      "State": "uttarpradesh",
+      "Country": "China",
+      "ZipCode": "202142",
+      "CardNumber": "5643343456781234",
+      "CardName": "Digvijay",
+      "CardExpiryDate": "1256",
+      "CardCVC": "123",
+      "roomDetails": {
+        "id": "c798ac06-a096-4ed0-b42a-72968898f45a",
+        "title": "Two Double Beds",
+        "price": 109.99,
+        "tax": 36.12,
+        "fee": 8.5,
+        "shortDes": "Two Double Beds : Featuring a flat-screen cable TV, free high-speed Wi-Fi, a small refrigerator, electronic safe, iron and board, and coffee table + machine. Guests are also provided with a stand up shower bathroom..."
+      },
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    }
+  ]
 }
