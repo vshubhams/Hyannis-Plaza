@@ -5,6 +5,10 @@ import React from 'react'
 
 
 const useStyles = makeStyles((theme) => ({
+    color: {
+        backgroundColor: '#eee',
+        height:'100%'
+    },
     btn: {
         backgroundColor: 'rgb(84,20,13)',
         width:'85%',
@@ -13,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
     },
     flex: {
         display: 'grid',
-        gridTemplateColumns: 'auto auto',
-        gridGap: '4px',
+        gridTemplateRows: 'repeat(4,75px)',
+        gridGap: '8px',
         fontFamily: 'Open Sans sans-serif',
         textAlign: 'left',
         fontSize: '14px',
@@ -47,11 +51,20 @@ const useStyles = makeStyles((theme) => ({
     temp: {
          textAlign: 'left',
         fontSize: '14px',
-        paddingLeft: '50px',
-        paddingTop: '10px',
+        paddingLeft: '20px',
+        paddingTop: '2px',
+        backgroundColor: 'white',
+        width: '90%',
+        margin: 'auto',
+        paddingBottom:'1rem'
     },
     btn2: {
         fontSize: '18px',
+        backgroundColor: 'white',
+        padding: '1.5rem',
+        margin: '0',
+        width: '100%',
+        borderBottom:'dotted 1px #777777'
     },
 
     bld: {
@@ -66,14 +79,14 @@ const useStyles = makeStyles((theme) => ({
 
 function Sidebar1() {
     const classes = useStyles()
-    const [open,setOpen] = React.useState(true);
+    const [open,setOpen] = React.useState(false);
     
 
     const handleChange = (e) => {
         setOpen((items) => !items);
     }
     return (
-        <div>
+        <div className={classes.color}>
             <Button
                 className={classes.btn}
                 variant="contained"
@@ -92,13 +105,11 @@ function Sidebar1() {
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Room(s)</p>
-                    <p>1</p>
+                    <p className={classes.bold}>Number<br /> of Room(s) <br/> 1</p>
                 </div>
 
                 <div className={classes.pad}>
-                    <p className={classes.bold}>Number<br /> of Nights</p>
-                    <p>1</p>
+                    <p className={classes.bold}>Number<br /> of Nights <br/> 1 </p>
                 </div>
             </div>
 
@@ -120,15 +131,10 @@ function Sidebar1() {
                 {open ? <div className={classes.temp}>
                     
                     <p className={classes.bld}>Free Room Amenities</p>
-                    <br />
                     <p >Hair Dryer</p>
-                    <br />
                     <p >Coffee Maker</p>
-                    <br />
                     <p >Iron</p>
-                    <br />
                     <p >Air Conditioner</p>
-                    <br />
                     <p className={classes.bld}>Room Description</p>
                     <p className={classes.rtpad}>Two Double Beds : Featuring a flat-screen cable TV,
                         free high-speed Wi-Fi,
