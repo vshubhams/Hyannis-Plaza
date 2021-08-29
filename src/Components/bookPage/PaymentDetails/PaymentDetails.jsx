@@ -38,7 +38,7 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
             <form className={classes.container}>
                 <TextField
                     label="Card Number"
-                    name='number'
+                    // name='number'
                     required
                     fullWidth
                     variant="filled"
@@ -49,7 +49,7 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                 />
                 <TextField
                     label="Name"
-                    name='name'
+                    // name='name'
                     required
                     fullWidth
                     variant="filled"
@@ -60,7 +60,7 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                 />
                 <TextField
                     label="MM/YY"
-                    name='expiry'
+                    // name='expiry'
                     required
                     fullWidth
                     variant="filled"
@@ -71,7 +71,7 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                 />
                 <TextField
                     label="CVC"
-                    name='cvc'
+                    // name='cvc'
                     required
                     fullWidth
                     variant="filled"

@@ -292,22 +292,6 @@
       "CardName": "Digvijay",
       "CardExpiryDate": "1256",
       "CardCVC": "123",
-      "id": 4
-    },
-    {
-      "fName": "Digvijay",
-      "lName": "Singh",
-      "email": "dig30786@gmail.com",
-      "phone": "8860789417",
-      "address": "dayara",
-      "city": "aligarh",
-      "State": "uttarpradesh",
-      "Country": "China",
-      "ZipCode": "202142",
-      "CardNumber": "5643343456781234",
-      "CardName": "Digvijay",
-      "CardExpiryDate": "1256",
-      "CardCVC": "123",
       "roomDetails": {
         "id": "c798ac06-a096-4ed0-b42a-72968898f45a",
         "title": "Two Double Beds",
@@ -343,19 +327,12 @@
       "id": 6
     },
     {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
+      "fName": "Shubham",
+      "CardNumber": "4589894545454545",
+      "CardName": "Shubham",
+      "CardExpiryDate": "0221",
+      "CardCVC": "899",
+      "id": 12
     }
   ]
 }

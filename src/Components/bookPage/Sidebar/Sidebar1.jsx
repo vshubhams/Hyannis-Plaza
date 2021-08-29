@@ -2,24 +2,26 @@ import { Divider } from '@material-ui/core';
 
 import { Button, makeStyles } from '@material-ui/core'
 import React from 'react'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 
 const useStyles = makeStyles((theme) => ({
     color: {
         backgroundColor: '#eee',
-        height:'100%'
+        height: '100%',
+        padding:"0 20px"
     },
     btn: {
-        backgroundColor: 'rgb(84,20,13)',
-        width:'85%',
-        margin: '20px',
-        marginLeft: '10px'
+        width: "100%",
+        marginTop: '20px',
     },
     flex: {
         display: 'grid',
-        gridTemplateRows: 'repeat(4,75px)',
-        gridGap: '8px',
-        fontFamily: 'Open Sans sans-serif',
+        gridTemplateColumns: 'repeat(2,50%)',
+        gridGap: '0px',
+        color: "#555555",
+        // fontFamily: 'Open Sans sans-serif',
         textAlign: 'left',
         fontSize: '14px',
     },
@@ -28,25 +30,26 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textAlign: 'left',
         fontSize: '14px',
+        margin: "0",
+        color: "#555555"
     },
     pad: {
-        padding: '20px',
-        paddingTop: '10px',
+        padding: '10px',
+        // paddingTop: '10px',
+        // border: "solid"
     },
     center: {
         textAlign: 'center',
     },
     width: {
         width: '85%',
-        margin:'auto',
+        margin: 'auto',
     },
     blue: {
         color: 'rgb(35,117,155)',
-       
         textAlign: 'left',
-        fontSize: '14px',
-        // margin: '10px',
-        marginBottom: '10px'
+        fontSize: '16px',
+        margin: '5px 0'
     },
     temp: {
          textAlign: 'left',
@@ -54,15 +57,17 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: '20px',
         paddingTop: '2px',
         backgroundColor: 'white',
-        width: '90%',
         margin: 'auto',
-        paddingBottom:'1rem'
+        paddingBottom: '1rem',
     },
     btn2: {
         fontSize: '18px',
         backgroundColor: 'white',
-        padding: '1.5rem',
+        display: 'flex',
+        justifyContent:"space-between",
+        padding: '10px',
         margin: '0',
+        cursor: "pointer",
         width: '100%',
         borderBottom:'dotted 1px #777777'
     },
@@ -90,7 +95,7 @@ function Sidebar1() {
             <Button
                 className={classes.btn}
                 variant="contained"
-                color="secondary"
+                color="primary"
                 fullWidth
             >Modify</Button>
             <div className={classes.flex}>
@@ -115,19 +120,16 @@ function Sidebar1() {
 
             <div className={classes.pad}>
                 <p className={classes.bold}>Booked Rate</p>
-            </div>
-            
-            <div className={classes.width}>
-            
                 <p className={classes.blue}>BEST AVAILBALE RATE</p>
-          
             </div>
+            
+          
             <Divider />
             <div>
-                <Button onClick={handleChange} variant='filled' className={classes.btn2}>TWO DOUBLE BEDS</Button>
-                <div className={classes.width}>
+                <div onClick={handleChange} variant='filled' className={classes.btn2}>TWO DOUBLE BEDS <span>{open?<ExpandLessIcon/>: <ExpandMoreIcon/>}</span></div>
+                {/* <div className={classes.width}>
                     <hr />
-                </div>
+                </div> */}
                 {open ? <div className={classes.temp}>
                     
                     <p className={classes.bld}>Free Room Amenities</p>

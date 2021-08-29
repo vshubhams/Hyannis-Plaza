@@ -9,8 +9,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios'
 import { PaymentDetails } from './PaymentDetails/PaymentDetails'
-import { v4 as uuid } from 'uuid';
-import { alert, console } from 'globalthis/implementation'
+import { console } from 'globalthis/implementation'
 import swal from 'sweetalert';
 function BookPage() {
     const [room, setRoom] = useState({});
