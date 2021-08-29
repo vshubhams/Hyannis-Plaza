@@ -1,0 +1,56 @@
+
+.heading{
+    margin: 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+.container>h5{
+    margin: 0;
+    color: #777777;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.carouselBox>h5{
+    color: #777777;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.amenityHeading{
+    margin-top: 7px;}
+.amenities{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.amenities>div{
+    display: flex;
+    margin-right: 30px;
+    padding: 0 10px;
+}
+.amenities>div>svg{
+    fill: green;
+    width: 19px;
+}
+.amenities p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.features>div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 1px #777777;
+}
+.features p{
+    font-size: 14px;
+    margin: 0;
+}
+.features span{
+    color: #0080A9;
+    font-weight: 600;
+}

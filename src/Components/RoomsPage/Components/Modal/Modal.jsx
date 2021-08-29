@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsOpen } from '../../../../Redux/rooms/actions';
-
+import { CarouselBox } from './Components/CarouselBox';
+import { Description } from './Components/Description';
+import { Heading } from './Components/Heading';
 const useStyles = makeStyles((theme) => ({
     modal: {
         display: 'flex',
@@ -16,34 +17,57 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         boxShadow: theme.shadows[5],
         width: "80%",
+        margin: "50px 0",
         outline: "none",
-        // padding: theme.spacing(2, 4, 3),
     },
     header: {
         backgroundColor: "#343644",
         display: 'flex',
         justifyContent: 'space-between',
         color: "#FFF",
+        padding: "5px 10px 10px"
+    },
+    container: {
+        padding: "20px",
     },
     main: {
-
+        display: 'grid',
+        gridGap: "2%",
+        gridTemplateColumns: "49% 49%",
     },
     imgBox: {
-
+        // border:"solid blue"
     },
     contentBox: {
-
+        // border: "solid red"
+    },
+    bottom: {
+        display: "flex",
+        justifyContent: "space-between",
+    },
+    closeButton: {
+        color: "#FFF",
+        border: "none",
+        padding: "8px 18px",
+        backgroundColor: "#541202"
+    },
+    cross: {
+        fontSize: "20px",
+        fontWeight: "700",
+        marginRight: "20px",
+        cursor:"pointer"
     }
+
 }));
 
 export default function TransitionsModal() {
-    const open = useSelector((state) => state.app.isOpen);
+    const open = useSelector((state) => state.app.modal.isOpen);
     const classes = useStyles();
     const dispatch = useDispatch();
 
-
     const handleClose = () => {
-        const setOpenAction = setIsOpen(false);
+        const payload = { id: "", isOpen: false }
+        const setOpenAction = setIsOpen(payload);
         dispatch(setOpenAction)
     };
 
@@ -61,24 +85,27 @@ export default function TransitionsModal() {
                     timeout: 500,
                 }}
             >
-                <Fade in={open}>
-                    <div className={classes.paper}>
-                        <div className={classes.header}>
-                            <h1>Two Double Beds</h1>
-                            <div>x</div>
-                        </div>
-                        
+                <div className={classes.paper}>
+                    <div className={classes.header}>
+                        <Heading />
+                        <div className={classes.cross} onClick={handleClose} >x</div>
+                    </div>
+
+                    <div className={classes.container}>
                         <div className={classes.main}>
                             <div className={classes.imgBox}>
-                                shubham
+                                <CarouselBox />
                             </div>
                             <div className={classes.contentBox}>
-                                verma
+                                <Description />
                             </div>
                         </div>
-                        <button onClick={handleClose}>Close</button>
+                        <div className={classes.bottom}>
+                            <div></div>
+                            <button className={classes.closeButton} onClick={handleClose}>CLOSE</button>
+                        </div>
                     </div>
-                </Fade>
+                </div>
             </Modal>
         </div>
     );

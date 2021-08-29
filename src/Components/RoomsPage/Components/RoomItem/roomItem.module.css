@@ -152,6 +152,9 @@ color: #0081AB;
     color: #b92424;
     font-size: 16px;
 }
+.tag>p{
+    margin-bottom: 0;
+}
 .tag>svg{
     margin-right: 10px;
 }

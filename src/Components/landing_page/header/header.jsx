@@ -1,7 +1,7 @@
 import { Container, makeStyles,Grid, Typography } from '@material-ui/core';
 import { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import styles from './header.css';
+
 const useStyles = makeStyles((theme) => ({
     cont: {
         width: '100%',

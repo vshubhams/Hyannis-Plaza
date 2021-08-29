@@ -6,6 +6,7 @@ import Accessibility from '../Components/landing_page/accessibility/accessibilit
 import Home from "../Components/landing_page/home";
 import { RoomsPage } from "../Components/RoomsPage/RoomsPage";
 import NewResList from "../Components/RoomsPage/Components/RestaurantList/newResList";
+
 export default function Routing() {
   return (
     <Switch>
