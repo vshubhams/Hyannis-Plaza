@@ -5,11 +5,11 @@
 
 ### Screenshots
 #### Landing page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(491).png)
 #### Rooms page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(493).png)
 #### Booking page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(495).png)
 
 ### Team members:-
 #### Digvijay Singh [View GitHub profile](https://github.com/digvijay30786)
