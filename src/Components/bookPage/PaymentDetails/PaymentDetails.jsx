@@ -23,7 +23,7 @@ export const PaymentDetails = () => {
     const [expiry, setExpiry] = useState('')
     const [cvc, setCvc] = useState('')
     const [focus, setFocus] = useState('')
-
+    const [permission, setpermission] = useState(false);
     return (
         <div className={styles.wrapper}>
             <h3>PAYMENT DETAILS</h3>
@@ -82,11 +82,11 @@ export const PaymentDetails = () => {
                 />
             </form>
             <div className={styles.terms}>
-                <Checkbox name="checkedB" color="primary" />
+                <Checkbox name="checkedB" color="primary" onClick={ ()=>setpermission(!permission)}/>
                 <div>I AGREE TO THE TERMS AND CONDITIONS</div>
             </div>
             <div className={styles.confirm}>
-            <button>CONFIRM BOOKING</button>
+            <button disabled={permission?"":"disabled"} >CONFIRM BOOKING</button>
             </div>
         </div>
     )

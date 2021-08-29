@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios'
 import { PaymentDetails } from './PaymentDetails/PaymentDetails'
-
+import { v4 as uuid } from 'uuid';
 
 function BookPage() {
     const [room, setRoom] = useState({});
@@ -29,9 +29,10 @@ function BookPage() {
             })
     }, [id]);
 
-    console.log('room:', room)
+    console.log('room:', room);
     return (
-        <div>
+        <div className={styles.backg}>
+        <div className={styles.container}>
             <Header />
             <div className={styles.main}>
                 <div>
@@ -43,7 +44,8 @@ function BookPage() {
                     <PaymentDetails />
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
     )
 }
 
