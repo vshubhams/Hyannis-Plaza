@@ -18,7 +18,7 @@ function BookPage() {
     const [redi, setredi] = useState(false);
     useEffect(() => {
         window.scrollTo(0,0)
-        axios.get("http://localhost:3001/rooms")
+        axios.get(process.env.REACT_APP_ROOMS_API_KEY)
             .then((res) => {
                 const data = res.data.filter((item) => {
                     return item.id === id;
@@ -35,13 +35,11 @@ function BookPage() {
     {
         const { name, value } = event;
         setbookDetails({ ...bookDetails, [name]: value });
-        console.log(room.title);
+        // console.log(room.title);
     }
-
-
     const handleSubmitBook = () => {
 
-        axios.post(" http://localhost:3001/confirm_book",bookDetails)
+        axios.post(process.env.REACT_APP_CONFIRM_BOOKING_API_KEY,bookDetails)
             .then((res) => {
                     swal("Done", "Your Booking Sucessfully Completed", "success")
                   .then(willDelete => {
