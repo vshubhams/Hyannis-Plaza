@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     cont: {
         width: '100%',
         background: '#212121',
-        height:'7rem'
+        maxWidth:"100%",
     },
     falign:
     {
