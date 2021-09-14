@@ -1,8 +1,6 @@
 # Project:- Clone of hyannisplazahotel.com
 ##### hyannisplazahotel.com is the official website of the Hyannis Plaza hotel. Our task was to clone this website with all it's major functionalities. We were able to achieve the desired result with all these major functionalities within 5 days.
 
-#Tech Stack : React
-
 ### Demo - [Visit website](https://hyannisplaza.netlify.app/)
 
 ### Screenshots
