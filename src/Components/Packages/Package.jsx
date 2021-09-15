@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Header } from '../RoomsPage/Components/Header/Header'
 import Header from '../landing_page/header/header';
 import styles from '../RoomsPage/Components/RoomLeftSide/RoomsLeftSide.module.css';
 import Footer from '../landing_page/footer/footer';

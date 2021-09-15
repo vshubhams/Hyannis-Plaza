@@ -100,8 +100,6 @@ textarea {
   opacity: 1;
 }
 .calSvgDiv {
-  /* width: 34px;  */
-  /* height: 34px !important;;  */
   background-color: rgb(238, 238, 238);
   border: 0.5px solid rgb(204, 204, 204);
   position: relative;
@@ -111,20 +109,12 @@ textarea {
   width: 10%;
   display: table-cell;
   margin-left: 3px;
-  /* top: 10px; */
-  /* height: 39px; */
   color: #343644;
   right: 5px;
-  /* border-top-left-radius: 0;
-    border-bottom-left-radius: 0; */
-  /* background-color: transparent; */
   height: auto !important;
   margin: 0;
   top: 0px !important;
   padding: 7px;
-  /* float: right; */
-  /* padding: 3px; */
-  /* box-sizing: border-box; */
 }
 
 .addIt {
@@ -151,7 +141,6 @@ padding: 10px 2px 4px;
 .peoples {
   padding-right: 0px;
   width: 33.333333%;
-  /* border: 1px solid yellow; */
 }
 .peoples_Sel_1 {
   border: 1px solid #ccc;
@@ -184,10 +173,6 @@ padding: 10px 2px 4px;
   cursor: pointer;
   user-select: none;
 }
-/* .addIcon{
-    top: 16px;
-    position: relative;
-} */
 .promo {
   display: flex;
   margin: 10px 0px;
@@ -208,7 +193,6 @@ padding: 10px 2px 4px;
   margin: auto;
   max-width: 1020px;
   padding: 96px 32px;
-  /* height: 150px; */
 }
 .pkgBody > img {
   height: 400px;
