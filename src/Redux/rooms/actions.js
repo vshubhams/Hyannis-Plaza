@@ -28,7 +28,7 @@ export const getRoomsFailure =(error)=>{
 
 export const getRooms =() =>(dispatch)=>{
     dispatch(getRoomsRequest());
-    return axios.get("http://localhost:3001/rooms")
+    return axios.get(process.env.REACT_APP_ROOMS_API_KEY)
     .then(res=>{
         dispatch(getRoomsSuccess(res.data))
     }).catch((err)=>{

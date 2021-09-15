@@ -1,15 +1,15 @@
 # Project:- Clone of hyannisplazahotel.com
-##### hyannisplazahotel.com is the official website of the Hyannis Plaza hotel. Our task was to clone this website with all it's major functionalities. We were able to achieve the desired result with all these major functionalities within 5-6 days.
+##### hyannisplazahotel.com is the official website of the Hyannis Plaza hotel. Our task was to clone this website with all it's major functionalities. We were able to achieve the desired result with all these major functionalities within 5 days.
 
-#Tech Stack : React
+### Demo - [Visit website](https://hyannisplaza.netlify.app/)
 
 ### Screenshots
 #### Landing page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(491).png)
 #### Rooms page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(493).png)
 #### Booking page-
-![alt text](https://github.com/vshubhams/)
+![alt text](https://github.com/vshubhams/Hyannis-Plaza/blob/master/public/screenshots/Screenshot%20(495).png)
 
 ### Team members:-
 #### Digvijay Singh [View GitHub profile](https://github.com/digvijay30786)
