@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         
       },
       chkb:{
-        // backgroundColor: "rgb(84,18,2)"
+        
         color: "rgb(84,18,2)"
       }
 
@@ -62,7 +62,7 @@ const names = [
 
 const Dropdown1 = () => {
     const classes = useStyles();
-    // const rooms = useSelector((state) => state.app.rooms);
+   
    
     const [personName, setPersonName] = React.useState([]);
   
@@ -72,24 +72,11 @@ const Dropdown1 = () => {
       setPersonName(event.target.value);
       const getFilterAction = getFilterRoom(event.target.value);
       dispatch(getFilterAction);
-      // var my = event.target.value;
-      // console.log(event.target.value);
+     
       
     };
 
     
-    
-  
-    // const handleChangeMultiple = (event) => {
-    //   const { options } = event.target;
-    //   const value = [];
-    //   for (let i = 0, l = options.length; i < l; i += 1) {
-    //     if (options[i].selected) {
-    //       value.push(options[i].value);
-    //     }
-    //   }
-    //   setPersonName(value);
-    // };
 
     return (
         <div>
