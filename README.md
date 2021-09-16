@@ -29,12 +29,20 @@ In the project directory, you can run:
 
 #1. install node modules `npm i`
 
-#2. install json-server `npm install -g json-server`
+#2. 
+- Go to in src/Components/Redux/room/actions.js 
+     - replace `process.env.REACT_APP_ROOMS_API_KEY` with `http://localhost:3001/rooms` in getRooms function
 
-#3. start json-server on port 3001
+- Go to in src/Components/bookPage/BookPage.jsx
+     - replace `process.env.REACT_APP_ROOMS_API_KEY` with `http://localhost:3001/rooms`
+     - replace `process.env.REACT_APP_CONFIRM_BOOKING_API_KEY` with `http://localhost:3001/confirm_book`
 
-#3(a). split the terminal `ctrl+shift+5`
+#3. install json-server `npm install -g json-server`
 
-#3(b). start json-setver `json-server --watch db.json --port 3001`
+#4. start json-server on port 3001
 
-#4. start react app `npm start`
+#4(a). split the terminal `ctrl+shift+5`
+
+#4(b). start json-setver `json-server --watch db.json --port 3001`
+
+#5. start react app `npm start`
