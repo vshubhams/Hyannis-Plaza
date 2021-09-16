@@ -44,6 +44,8 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                     variant="filled"
                     size="small"
                     name="CardNumber"
+                    inputProps={{ maxLength: 16 }}
+                    erorText="Please enter only 12 digits number"
                     onChange={e => { confirmBook(e.target);setNumber(e.target.value) }}
                     onFocus={e=>setFocus(e.target.name)}
                 />
@@ -70,10 +72,11 @@ export const PaymentDetails = ({confirmBook,handleSubmitBook}) => {
                     onFocus={e=>setFocus(e.target.name)}
                 />
                 <TextField
-                    label="CVC"
+                    label="CVV"
                     name='cvc'
                     required
                     fullWidth
+                    inputProps={{maxLength:3}}
                     variant="filled"
                     size="small"
                     // name="CardCVC"
